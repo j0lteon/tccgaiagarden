@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Meus_Favoritos">
+
+    <ImageView
+        android:id="@+id/logo1"
+        style="@style/Logo1"
+        android:src="@drawable/gaiagardenlogo"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        app:layout_constraintEnd_toStartOf="@id/pesquisar"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/verde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        />
+
+    <ImageView
+        android:id="@+id/home"
+        android:src="@drawable/home"
+
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        />
+
+    <TextView
+        android:id="@+id/iniciotexto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Início"
+
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/home"
+        />
+
+    <EditText
+        android:id="@+id/pesquisar"
+        style="@style/Pesquisar"
+
+        android:hint="Pesquisar"
+
+        app:layout_constraintStart_toStartOf="@id/logo1"
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="130dp"
+        />
+
+    <ImageView
+        android:id="@+id/estrela"
+        android:src="@drawable/estrelaverde"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+
+        app:layout_constraintStart_toStartOf="@id/home"
+        app:layout_constraintTop_toBottomOf="@id/barra"
+
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/meusfavoritos"
+        android:text="Meus favoritos"
+        android:textColor="@color/texto"
+        android:textStyle="bold"
+        android:textSize="22sp"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        app:layout_constraintStart_toEndOf="@id/estrela"
+        app:layout_constraintTop_toBottomOf="@id/barra"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:src="@drawable/estrelaverde"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        app:layout_constraintEnd_toEndOf="@id/barra"
+        app:layout_constraintStart_toStartOf="@id/estrela"
+        app:layout_constraintTop_toBottomOf="@id/meusfavoritos"
+
+
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/diagonal"
+        android:src="@drawable/diagonal"
+
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginRight="50dp"
+
+        app:layout_constraintEnd_toEndOf="@id/barra"
+        app:layout_constraintStart_toStartOf="@id/estrela"
+        app:layout_constraintTop_toBottomOf="@id/meusfavoritos"
+
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/vazio"
+        android:text="Meus favoritos está vazio"
+        android:textColor="@color/texto"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="@id/cart"
+        app:layout_constraintTop_toBottomOf="@id/cart"
+        app:layout_constraintStart_toStartOf="@id/cart"
+        />
+
+    <TextView
+        android:id="@+id/escolha"
+        android:text="Escolha alguns produtos do nosso"
+        android:textColor="@color/texto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cart"
+        app:layout_constraintStart_toStartOf="@id/cart"
+        app:layout_constraintEnd_toEndOf="@id/cart"
+
+        />
+
+    <TextView
+        android:id="@+id/catalogo"
+        android:text="catálogo para favoritar"
+        android:textColor="@color/texto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cart"
+        app:layout_constraintStart_toStartOf="@id/cart"
+        app:layout_constraintEnd_toEndOf="@id/cart"
+        />
+
+    <Button
+        android:id="@+id/adicionar"
+        style="@style/Button"
+
+        android:backgroundTint="@color/verde"
+        android:text="Adicionar produtos"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="@id/meusfavoritos"
+        app:layout_constraintTop_toBottomOf="@id/catalogo"
+        app:layout_constraintEnd_toEndOf="@id/meusfavoritos"
+
+        android:layout_marginTop="30dp"
+        />
+
+    <View
+        android:id="@+id/rodape"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:background="@color/verde"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/sobre"
+        android:text="Sobre nós"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintStart_toStartOf="@id/home"
+        />
+
+    <TextView
+        android:id="@+id/empresa"
+        android:text="Empresa fundada no ano de 2023. Nosso principal objetivo é levar conforto através das nossas plantas."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintTop_toTopOf="@id/sobre"
+        app:layout_constraintStart_toStartOf="@id/home"
+        />
+
+    <View
+        android:id="@+id/barrabranca"
+
+        android:background="@color/white"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="@id/rodape"
+        app:layout_constraintLeft_toLeftOf="@id/rodape"
+        app:layout_constraintRight_toRightOf="@id/rodape"
+        />
+
+    <TextView
+        android:id="@+id/faleconosco"
+        android:text="Fale conosco"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+
+        app:layout_constraintLeft_toRightOf="@id/barrabranca"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintStart_toEndOf="@id/barrabranca"
+        />
+
+    <TextView
+        android:id="@+id/contato"
+        android:text="GaiaGarden@atedimento.com Telefone da loja: (11) 1234-5678"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+
+
+        app:layout_constraintLeft_toRightOf="@id/barrabranca"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintStart_toEndOf="@id/barrabranca"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

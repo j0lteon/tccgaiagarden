@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ContainerComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/container_components</item>
+    </style>
+
+    <style name="Edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Edit_text_Error">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_error</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Pesquisar">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_marginRight">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="Add_fav">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_marginRight">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Buttoncategorias">
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginBottom"></item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Categoriaimage">
+        <item name="android:layout_marginLeft">140dp</item>
+        <item name="android:layout_marginRight">140dp</item>
+        <item name="android:radius">50dp</item>
+    </style>
+
+    <style name="Categoria">
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+    </style>
+
+    <style name="Logo1">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">90dp</item>
+    </style>
+
+        <style name="Logo3">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">95dp</item>
+        </style>
+
+    <style name="BarraNormal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+    </style>
+
+</resources>

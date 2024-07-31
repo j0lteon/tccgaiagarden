@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Categorias">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:src="@drawable/gaiagardenlogo"
+        style="@style/Logo1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        />
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@color/verde"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        />
+
+    <ImageView
+        android:id="@+id/home"
+        android:src="@drawable/home"
+
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="12dp"
+
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        />
+
+    <TextView
+        android:id="@+id/hometexto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Início"
+
+        android:layout_marginLeft="10dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/home"
+        />
+
+    <EditText
+        android:id="@+id/pesquisar"
+        style="@style/Pesquisar"
+
+        android:hint="Pesquisar"
+
+        android:inputType=""
+
+        android:textStyle="bold"
+        android:layout_marginLeft="130dp"
+
+        app:layout_constraintStart_toStartOf="@id/logo1"
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/estrela"
+        android:src="@drawable/estrela"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="74dp"
+
+        app:layout_constraintEnd_toEndOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintStart_toStartOf="@id/plantas"
+        />
+
+    <TextView
+        android:id="@+id/meusfavoritos"
+        android:text="Meus favoritos"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        android:layout_marginLeft="4dp"
+
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/estrela"
+        />
+
+    <View
+        android:id="@+id/plantas"
+        style="@style/Categoria"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_marginTop="60dp"
+
+        android:background="@drawable/categoriaplantas"
+
+        android:src="@drawable/container_components"
+
+        app:layout_constraintTop_toBottomOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="@id/barra"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        />
+
+    <Button
+        android:id="@+id/categoriaplantas"
+        style="@style/Buttoncategorias"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/verde"
+
+        android:text="Plantas"
+
+        app:layout_constraintStart_toStartOf="@id/plantas"
+        app:layout_constraintEnd_toEndOf="@id/plantas"
+        app:layout_constraintTop_toBottomOf="@id/plantas"
+        />
+
+    <View
+        android:id="@+id/flores"
+        style="@style/Categoria"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:background="@drawable/categoriaflores"
+
+        android:layout_marginTop="80dp"
+
+        android:src="@drawable/container_components"
+
+        app:layout_constraintTop_toBottomOf="@id/categoriaplantas"
+        app:layout_constraintBottom_toBottomOf="@id/categoriaplantas"
+        app:layout_constraintBottom_toTopOf="@id/categoriaflores"
+        />
+
+    <Button
+        android:id="@+id/categoriaflores"
+        style="@style/Buttoncategorias"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/verde"
+
+
+        android:text="Flores"
+
+        app:layout_constraintStart_toStartOf="@id/flores"
+        app:layout_constraintEnd_toEndOf="@id/flores"
+        app:layout_constraintTop_toBottomOf="@id/flores"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
