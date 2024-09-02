@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescricaoCactos">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:src="@drawable/gaiagardenlogo"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        />
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@color/verde"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        />
+
+    <ImageView
+        android:id="@+id/estrela"
+        android:src="@drawable/estrela"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_marginRight="110dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="@id/barra"/>
+
+    <TextView
+        android:id="@+id/meusfavoritos"
+        android:text="Meus favoritos"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        android:layout_marginLeft="5dp"
+
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/estrela"
+        />
+
+    <EditText
+        android:id="@+id/pesquisar"
+        style="@style/Pesquisar"
+        android:layout_marginLeft="130dp"
+
+        android:inputType=""
+        android:text="Pesquisar"
+        android:textStyle="bold"
+        android:textColor="@color/cinza"
+
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/logo1"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:src="@drawable/seta"
+
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="12dp"
+
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        />
+
+    <TextView
+        android:id="@+id/hometexto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/voltar"
+
+        android:layout_marginLeft="10dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/voltar"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

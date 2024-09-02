@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cactos">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:src="@drawable/gaiagardenlogo"
+
+        app:layout_constraintEnd_toStartOf="@id/container2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        />
+
+    <View
+        android:id="@+id/container2"
+        style="@style/ContainerComponents2"
+
+
+        app:layout_constraintBottom_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logo1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@color/verde"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/carrossel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        />
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/seta"
+
+        app:layout_constraintEnd_toStartOf="@id/voltartexto"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        />
+
+    <TextView
+        android:id="@+id/voltartexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/voltar"
+        />
+
+    <ImageView
+        android:id="@+id/estrela"
+        android:src="@drawable/estrela"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+
+        app:layout_constraintEnd_toStartOf="@id/meusfavoritos"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/voltartexto"
+        />
+
+    <TextView
+        android:id="@+id/meusfavoritos"
+        android:text="Meus favoritos"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/estrela"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        />
+
+    <View
+        android:id="@+id/carrossel"
+        android:src="@drawable/container_components"
+        android:background="@drawable/categoriaplantas"
+
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barra" />
+</androidx.constraintlayout.widget.ConstraintLayout>
