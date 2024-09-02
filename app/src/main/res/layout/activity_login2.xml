@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    tools:context=".Login2">
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/gaiagardensimples"
+        android:src="@drawable/container_components"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/container"
+
+        />
+
+    <View
+        android:id="@+id/container"
+        style="@style/ContainerComponents"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+
+        />
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/Edit_text"
+        android:hint="E-mail"
+
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        app:layout_constraintBottom_toTopOf="@id/senha"
+        android:padding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/senha"
+        style="@style/Edit_text"
+        android:hint="Senha"
+
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        />
+
+    <TextView
+        android:id="@+id/esqueceusenha"
+        android:text="@string/esqueceu_sua_senha"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/titulo"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/senha"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        />
+
+    <Button
+        android:id="@+id/entrar"
+        style="@style/Button"
+        android:backgroundTint="@color/verde"
+        android:text="@string/entrar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

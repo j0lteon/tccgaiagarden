@@ -7,6 +7,9 @@
     <color name="titulo">#32541C</color>
     <color name="cinza">#d6d6d6</color>
     <color name="texto">#464746</color>
+    <color name="gradiente1">#234C07</color>
+    <color name="gradiente2">#849E71</color>
+    <color name="gradiente3">#7A9A62</color>
 
     <color name="bordaerror">#A80000</color>
 
