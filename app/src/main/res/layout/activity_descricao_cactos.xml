@@ -103,11 +103,10 @@
         app:layout_constraintStart_toEndOf="@id/voltar"
         />
 
-    <View
+    <ImageView
 
         android:id="@+id/cactos"
-        android:background="@drawable/cacto"
-        style="@style/Categoria"
+        android:src="@drawable/cacto"
 
         android:layout_width="match_parent"
         android:layout_height="235dp"
