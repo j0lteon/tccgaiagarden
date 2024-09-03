@@ -7,12 +7,12 @@
     android:background="@drawable/gradiente"
     tools:context=".Login2">
 
-    <View
+    <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/gaiagardensimples"
-        android:src="@drawable/container_components"
+
+        android:src="@drawable/gaiagardensimples"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
