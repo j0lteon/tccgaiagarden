@@ -79,13 +79,15 @@
     <EditText
         android:id="@+id/edit_email"
         style="@style/Edit_text"
-        android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
 
         android:hint="Digite seu E-mail"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="@id/preencha"
-        app:layout_constraintTop_toBottomOf="@id/preencha" />
+        app:layout_constraintTop_toBottomOf="@id/preencha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit_tell"
+        />
 
     <EditText
         android:id="@+id/edit_tell"
@@ -93,21 +95,24 @@
         android:hint="Digite seu Nome"
         android:inputType="number"
 
-        app:layout_constraintStart_toStartOf="@id/preencha"
+        app:layout_constraintStart_toStartOf="@id/edit_email"
         app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit_DataNasc"
         android:layout_marginTop="20dp"
         />
 
     <EditText
         android:id="@+id/edit_DataNasc"
         style="@style/Edit_text"
+        android:layout_marginTop="12dp"
         android:hint="Digite sua Data de Nascimento"
-        android:inputType="number"
 
-        app:layout_constraintStart_toStartOf="@id/preencha"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/edit_tell"
         app:layout_constraintTop_toBottomOf="@id/edit_tell"
-        android:layout_marginTop="15dp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit_Senha"/>
 
     <EditText
         android:id="@+id/edit_Senha"
@@ -116,8 +121,10 @@
         android:hint="Digite sua Senha"
         android:inputType="number"
 
-        app:layout_constraintStart_toStartOf="@id/preencha"
+        app:layout_constraintStart_toStartOf="@id/edit_DataNasc"
         app:layout_constraintTop_toBottomOf="@id/edit_DataNasc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view4"
         android:layout_marginTop="20dp"
         />
 
@@ -131,6 +138,8 @@
 
         app:layout_constraintStart_toStartOf="@id/view4"
         app:layout_constraintTop_toBottomOf="@id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cadastrar"
         android:layout_marginTop="20dp"
         />
 
@@ -144,6 +153,7 @@
         app:layout_constraintEnd_toEndOf="@id/edit_Senha"
         app:layout_constraintStart_toStartOf="@id/edit_Senha"
         app:layout_constraintTop_toBottomOf="@id/edit_Senha"
+        app:layout_constraintBottom_toTopOf="@id/edit_confsenha"
         />
 
     <Button
@@ -156,6 +166,7 @@
         app:layout_constraintStart_toStartOf="@id/view4"
         app:layout_constraintTop_toBottomOf="@id/edit_confsenha"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
