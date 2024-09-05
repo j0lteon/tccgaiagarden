@@ -175,7 +175,7 @@
         android:layout_height="wrap_content"
 
         android:backgroundTint="@color/verde"
-        android:text="Adicionar aos meus favoritos"
+        android:text="@string/adicionar_aos_meus_favoritos"
 
         app:layout_constraintTop_toBottomOf="@id/desc_cacto"
         app:layout_constraintStart_toStartOf="parent"
