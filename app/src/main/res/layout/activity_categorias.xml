@@ -97,8 +97,8 @@
         />
 
     <ImageView
-        android:id="@+id/categoriafolhagens"
-        android:src="@drawable/folhagens"
+        android:id="@+id/categoriacactos"
+        android:src="@drawable/categoriacacto"
 
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -109,23 +109,27 @@
         />
 
     <TextView
-        android:id="@+id/Folhagens"
+        android:id="@+id/cactos"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Folhagem"
+        android:text="Cactos"
         android:textStyle="bold"
         android:textColor="@color/texto"
         android:textAlignment="center"
         android:textSize="18sp"
 
-        android:layout_marginLeft="35dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="5dp"
 
-        app:layout_constraintTop_toBottomOf="@id/categoriafolhagens"
-        app:layout_constraintStart_toStartOf="@id/hometexto"
+        app:layout_constraintTop_toBottomOf="@id/categoriacactos"
+        app:layout_constraintStart_toStartOf="@id/categoriacactos"
         />
+
+
+
+
 
     <ImageView
         android:id="@+id/categoriaflor"
@@ -160,6 +164,37 @@
         />
 
     <ImageView
+        android:id="@+id/categoriafolhagens"
+        android:src="@drawable/folhagens"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+
+        app:layout_constraintTop_toBottomOf="@id/categoriacactos"
+        app:layout_constraintStart_toStartOf="@id/hometexto"
+        />
+
+    <TextView
+        android:id="@+id/Folhagens"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Folhagem"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textAlignment="center"
+        android:textSize="18sp"
+
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+
+        app:layout_constraintTop_toBottomOf="@id/categoriafolhagens"
+        app:layout_constraintStart_toStartOf="@id/hometexto"
+        />
+
+    <ImageView
         android:id="@+id/categoriamudas"
         android:src="@drawable/categoriamudas"
 
@@ -167,8 +202,8 @@
         android:layout_height="150dp"
         android:layout_marginTop="60dp"
 
-        app:layout_constraintTop_toBottomOf="@id/categoriafolhagens"
-        app:layout_constraintStart_toStartOf="@id/hometexto"
+        app:layout_constraintTop_toBottomOf="@id/categoriaflor"
+        app:layout_constraintStart_toStartOf="@id/categoriaflor"
         />
 
     <TextView
@@ -187,39 +222,93 @@
         android:layout_marginTop="5dp"
 
         app:layout_constraintTop_toBottomOf="@id/categoriamudas"
-        app:layout_constraintStart_toStartOf="@id/hometexto"
+        app:layout_constraintStart_toStartOf="@id/categoriamudas"
         />
 
-    <ImageView
-        android:id="@+id/categoriacactos"
-        android:src="@drawable/categoriacacto"
+    <View
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
 
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/verde"
 
-        app:layout_constraintTop_toBottomOf="@id/categoriaflor"
-        app:layout_constraintStart_toEndOf="@id/categoriafolhagens"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
     <TextView
-        android:id="@+id/cactos"
+        android:id="@+id/sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Sobre nós:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape" />
 
+    <TextView
+        android:id="@+id/empresa"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="Empresa fundada no ano de 2023. Nosso principal objetivo é levar conforto através das nossas plantas. "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sobre"
+        app:layout_constraintTop_toTopOf="@id/sobre"
+        />
+
+
+    <View
+        android:id="@+id/barrabranca"
+
+        android:background="@color/white"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="@id/rodape"
+        app:layout_constraintStart_toStartOf="@id/rodape"
+        app:layout_constraintEnd_toEndOf="@id/rodape"
+        />
+
+    <ImageView
+        android:id="@+id/imgfalecnsc"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/faleconosco"
+
+        android:layout_marginRight="150dp"
+        app:layout_constraintStart_toStartOf="@id/barrabranca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/faleconosco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Cactos"
+        android:text="Fale Conosco"
+        android:textSize="24sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:textAlignment="center"
-        android:textSize="18sp"
+        android:layout_marginRight="10dp"
 
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="5dp"
-
-        app:layout_constraintTop_toBottomOf="@id/categoriacactos"
-        app:layout_constraintStart_toStartOf="@id/categoriacactos"
+        app:layout_constraintStart_toEndOf="@id/imgfalecnsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
