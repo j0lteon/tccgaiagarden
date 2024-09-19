@@ -106,7 +106,7 @@
     <View
 
         android:id="@+id/orquidea"
-        android:background="@drawable/orquidea"
+        android:background="@drawable/muda"
         style="@style/Categoria"
 
         android:layout_width="match_parent"

@@ -1,68 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Cactos">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Cactos">
 
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="130dp"
-        android:layout_height="90dp"
+        style="@style/Logo1"
         android:src="@drawable/gaiagardenlogo"
 
-        app:layout_constraintEnd_toStartOf="@id/container2"
-        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginRight="282dp"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/barra"
-        />
-
-    <View
-        android:id="@+id/container2"
-        style="@style/ContainerComponents2"
-
-
-        app:layout_constraintBottom_toTopOf="@id/barra"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/logo1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <View
         android:id="@+id/barra"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-
         android:background="@color/verde"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/carrossel"
+        android:layout_marginTop="40dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/orquidea"
         />
 
     <ImageView
         android:id="@+id/voltar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="12dp"
         android:src="@drawable/seta"
 
-        app:layout_constraintEnd_toStartOf="@id/voltartexto"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="366dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
         />
 
     <TextView
         android:id="@+id/voltartexto"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:text="Voltar"
 
-        android:textColor="@color/white"
-        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
 
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"
@@ -76,41 +80,76 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
 
+        android:layout_marginLeft="80dp"
 
-        app:layout_constraintEnd_toStartOf="@id/meusfavoritos"
+        app:layout_constraintStart_toEndOf="@id/voltartexto"
         app:layout_constraintTop_toTopOf="@id/barra"
         app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/voltartexto"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
         android:id="@+id/meusfavoritos"
-        android:text="Meus favoritos"
+        android:text="Meus Favoritos"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
 
-
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/estrela"
-        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
         />
 
-    <View
-        android:id="@+id/carrossel"
-        android:src="@drawable/container_components"
-        android:background="@drawable/categoriaplantas"
+    <ImageView
+        android:id="@+id/orquidea"
 
-        android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="20dp"
+        android:src="@drawable/muda"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textoorquidea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Orquídea"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/orquidea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precoorquidea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barra" />
+        app:layout_constraintTop_toBottomOf="@id/textoorquidea"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

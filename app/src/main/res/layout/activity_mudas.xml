@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Mudas"
+    android:background="#FFFFFF"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".Mudas">
+
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="130dp"
-        android:layout_height="90dp"
+        style="@style/Logo1"
         android:src="@drawable/gaiagardenlogo"
 
-        app:layout_constraintEnd_toStartOf="@id/container2"
-        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginRight="282dp"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/barra"
-        />
-
-    <View
-        android:id="@+id/container2"
-        style="@style/ContainerComponents2"
-
-
-        app:layout_constraintBottom_toTopOf="@id/barra"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/logo1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <View
         android:id="@+id/barra"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-
         android:background="@color/verde"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/carrossel"
+        android:layout_marginTop="40dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/muda2"
         />
 
     <ImageView
         android:id="@+id/voltar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="12dp"
         android:src="@drawable/seta"
 
-        app:layout_constraintEnd_toStartOf="@id/voltartexto"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="366dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
         />
 
     <TextView
         android:id="@+id/voltartexto"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:text="Voltar"
 
-        android:textColor="@color/white"
-        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
 
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"
@@ -75,41 +79,715 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
 
+        android:layout_marginLeft="80dp"
 
-        app:layout_constraintEnd_toStartOf="@id/meusfavoritos"
+        app:layout_constraintStart_toEndOf="@id/voltartexto"
         app:layout_constraintTop_toTopOf="@id/barra"
         app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/voltartexto"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
         android:id="@+id/meusfavoritos"
-        android:text="Meus favoritos"
+        android:text="Meus Favoritos"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
 
-
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/estrela"
-        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
         />
 
-    <View
-        android:id="@+id/carrossel"
-        android:src="@drawable/container_components"
-        android:background="@drawable/categoriaplantas"
+    <ImageView
+        android:id="@+id/muda"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
 
-        android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="20dp"
+        android:src="@drawable/muda"
+
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/muda4"
+        />
+
+    <TextView
+        android:id="@+id/textomuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boldo"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barra" />
+        app:layout_constraintTop_toBottomOf="@id/muda"
+        />
+
+    <TextView
+        android:id="@+id/precomuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda"
+        />
+
+    <ImageView
+        android:id="@+id/muda4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda4"
+
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textomuda4"
+        />
+
+    <TextView
+        android:id="@+id/textomuda4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lírio Branco"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda4"
+        />
+
+    <TextView
+        android:id="@+id/precomuda4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda4"
+        />
+
+    <ImageView
+        android:id="@+id/muda7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda7"
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textomuda7"
+        />
+
+    <TextView
+        android:id="@+id/textomuda7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copo de Leite"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda7"
+        />
+
+    <TextView
+        android:id="@+id/precomuda7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda7"
+        />
+
+    <ImageView
+        android:id="@+id/muda10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda10"
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textomuda10"
+        />
+
+    <TextView
+        android:id="@+id/textomuda10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alface D' Água"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="14sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda10"
+        />
+
+    <TextView
+        android:id="@+id/precomuda10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 2,00"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda10"
+        />
+
+    <ImageView
+        android:id="@+id/muda2"
+
+        android:src="@drawable/muda2"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textomuda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Arruda"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/muda2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precomuda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 19,90"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda2"
+        />
+
+    <ImageView
+        android:id="@+id/muda5"
+
+        android:src="@drawable/muda5"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textomuda5"
+        />
+
+    <TextView
+        android:id="@+id/textomuda5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Rosas"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/muda5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precomuda5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda5"
+        />
+
+    <ImageView
+        android:id="@+id/muda8"
+
+        android:src="@drawable/muda8"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textomuda8"
+
+        />
+
+    <TextView
+        android:id="@+id/textomuda8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Alface Lisa"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/muda8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precomuda8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 2,65"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda8"
+        />
+
+    <ImageView
+        android:id="@+id/muda11"
+
+        android:src="@drawable/muda11"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textomuda11"
+        />
+
+    <TextView
+        android:id="@+id/textomuda11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Clúsia"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+        android:layout_marginBottom="60dp"
+
+        app:layout_constraintTop_toBottomOf="@id/muda11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precomuda11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 12,00"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda11"
+        />
+
+    <ImageView
+        android:id="@+id/muda3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda3"
+
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintStart_toEndOf="@id/muda2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/muda6"
+        />
+
+    <TextView
+        android:id="@+id/textomuda3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cipó Jagube"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda3"
+        />
+
+    <TextView
+        android:id="@+id/precomuda3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 19,00"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda3"
+        />
+
+    <ImageView
+        android:id="@+id/muda6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda6"
+
+        android:layout_marginLeft="256dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/muda9"
+
+        />
+
+    <TextView
+        android:id="@+id/textomuda6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Erva Baleeira"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda6"
+        />
+
+    <TextView
+        android:id="@+id/precomuda6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 29,99"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda6"
+        />
+
+    <ImageView
+        android:id="@+id/muda9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda9"
+
+        android:layout_marginTop="50dp"
+
+        android:layout_marginLeft="256dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/muda12"
+        />
+
+    <TextView
+        android:id="@+id/textomuda9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quisquales"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda9"
+        />
+
+    <TextView
+        android:id="@+id/precomuda9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda9"
+        />
+
+    <ImageView
+        android:id="@+id/muda12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda12"
+
+        android:layout_marginTop="50dp"
+
+        android:layout_marginLeft="256dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda9"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textomuda12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hortelã"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda12"
+        />
+
+    <TextView
+        android:id="@+id/precomuda12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 2,90"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda12"
+        />
+
+    <View
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="30dp"
+        android:background="@color/verde"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/precomuda11"
+        />
+
+
+    <TextView
+        android:id="@+id/sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Sobre nós:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape" />
+
+    <TextView
+        android:id="@+id/empresa"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="Empresa fundada no ano de 2023. Nosso principal objetivo é levar conforto através das nossas plantas. "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sobre"
+        app:layout_constraintTop_toTopOf="@id/sobre"
+        />
+
+
+    <View
+        android:id="@+id/barrabranca"
+
+        android:background="@color/white"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="@id/rodape"
+        app:layout_constraintStart_toStartOf="@id/rodape"
+        app:layout_constraintEnd_toEndOf="@id/rodape"
+        />
+
+    <ImageView
+        android:id="@+id/imgfalecnsc"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/faleconosco"
+
+        android:layout_marginRight="150dp"
+        app:layout_constraintStart_toStartOf="@id/barrabranca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/faleconosco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Fale Conosco"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+
+        app:layout_constraintStart_toEndOf="@id/imgfalecnsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

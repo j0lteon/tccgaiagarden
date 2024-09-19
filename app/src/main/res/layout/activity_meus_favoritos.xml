@@ -115,7 +115,7 @@
 
     <ImageView
         android:id="@+id/diagonal"
-        android:src="@drawable/diagonal"
+        android:src="@drawable/anturio"
 
         android:layout_width="155dp"
         android:layout_height="155dp"
