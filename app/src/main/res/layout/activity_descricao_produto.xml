@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Descricao_Produto"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -9,70 +17,89 @@
 
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="130dp"
-        android:layout_height="90dp"
         android:src="@drawable/gaiagardenlogo"
+        style="@style/Logo1"
 
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="282dp"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
     <View
         android:id="@+id/barra"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-
         android:background="@color/verde"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo1"
         />
 
-    <EditText
-        android:id="@+id/pesquisar"
-        style="@style/Pesquisar"
-        android:layout_marginLeft="130dp"
-
-        android:inputType=""
-        android:text="Pesquisar"
-        android:textStyle="bold"
-        android:textColor="@color/cinza"
-
-        app:layout_constraintBottom_toTopOf="@id/barra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/logo1"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
     <ImageView
-        android:id="@+id/voltar"
-        android:src="@drawable/seta"
+        android:id="@+id/home"
+        android:src="@drawable/home"
 
         android:layout_width="30dp"
         android:layout_height="40dp"
 
-        android:layout_marginLeft="12dp"
+        android:layout_marginRight="366dp"
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo1"
         app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
         />
 
     <TextView
         android:id="@+id/hometexto"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="@string/voltar"
+        android:text="Início"
 
-        android:layout_marginLeft="10dp"
 
+        android:layout_marginLeft="5dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="18sp"
 
+
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/voltar"
+        app:layout_constraintStart_toEndOf="@id/home"
+        />
+
+    <ImageView
+        android:id="@+id/estrela"
+        android:src="@drawable/estrela"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="65dp"
+
+        app:layout_constraintStart_toEndOf="@id/hometexto"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/meusfavoritos"
+        android:text="Meus favoritos"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        android:layout_marginLeft="4dp"
+
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/estrela"
         />
 
     <Button
@@ -85,40 +112,26 @@
         android:backgroundTint="@color/verde"
         android:text="Adicionar aos meus favoritos"
 
-        app:layout_constraintBottom_toTopOf="@id/rodape"
         app:layout_constraintTop_toBottomOf="@id/desc_jorge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <ImageView
-        android:id="@+id/estrela"
-        android:src="@drawable/estrela"
+        android:id="@+id/espajorge"
+        android:src="@drawable/espadadesaojorge"
 
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
 
-        android:layout_marginRight="110dp"
+        android:layout_marginTop="20dp"
 
-        app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintEnd_toEndOf="@id/barra"/>
-
-    <TextView
-        android:id="@+id/meusfavoritos"
-        android:text="Meus favoritos"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-
-        android:layout_marginLeft="5dp"
-
-        app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/estrela"
+        app:layout_constraintTop_toBottomOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
+
+
 
     <TextView
         android:id="@+id/preco"
@@ -141,75 +154,85 @@
         android:id="@+id/desc_jorge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-
         android:text="Descrição: Uma planta fácil de cuidar que renova as energias do ambiente"
-        android:textAlignment="center"
-        android:textColor="@color/texto"
 
-        android:textSize="15sp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
         android:textStyle="bold"
+        android:textAlignment="center"
 
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintEnd_toEndOf="@id/espajorge"
+        app:layout_constraintStart_toStartOf="@id/espajorge"
         app:layout_constraintTop_toBottomOf="@id/preco"
-        tools:layout_editor_absoluteX="60dp" />
+        />
 
     <TextView
         android:id="@+id/name_prod"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
         android:text="Espada de São Jorge"
 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="@color/titulo"
-        android:textSize="20sp"
         android:textStyle="bold"
+
+        android:layout_marginTop="20dp"
 
         app:layout_constraintEnd_toEndOf="@id/desc_jorge"
         app:layout_constraintStart_toStartOf="@id/desc_jorge"
-        tools:layout_editor_absoluteY="405dp" />
+        app:layout_constraintTop_toBottomOf="@id/espajorge" />
 
     <View
         android:id="@+id/rodape"
-
         android:layout_width="match_parent"
         android:layout_height="100dp"
 
+        android:layout_marginTop="53dp"
         android:background="@color/verde"
 
+
+
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addfav"
         />
+
 
     <TextView
         android:id="@+id/sobre"
-        android:text="Sobre nós:"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
-
-        app:layout_constraintTop_toTopOf="@id/rodape"
-        app:layout_constraintStart_toStartOf="@id/voltar"
-        />
+        android:text="Sobre nós:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape" />
 
     <TextView
         android:id="@+id/empresa"
-        android:text="Empresa fundada no ano de 2023. Nosso principal objetivo é levar conforto através das nossas plantas. "
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
 
+        android:text="Empresa fundada no ano de 2023. Nosso principal objetivo é levar conforto através das nossas plantas. "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sobre"
         app:layout_constraintTop_toTopOf="@id/sobre"
-        app:layout_constraintStart_toStartOf="@id/voltar"
         />
+
 
     <View
         android:id="@+id/barrabranca"
@@ -220,48 +243,41 @@
 
         app:layout_constraintTop_toTopOf="@id/rodape"
         app:layout_constraintBottom_toBottomOf="@id/rodape"
-        app:layout_constraintLeft_toLeftOf="@id/rodape"
-        app:layout_constraintRight_toRightOf="@id/rodape"
+        app:layout_constraintStart_toStartOf="@id/rodape"
+        app:layout_constraintEnd_toEndOf="@id/rodape"
+        />
+
+    <ImageView
+        android:id="@+id/imgfalecnsc"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/faleconosco"
+
+        android:layout_marginRight="150dp"
+        app:layout_constraintStart_toStartOf="@id/barrabranca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
     <TextView
         android:id="@+id/faleconosco"
-        android:text="Fale conosco:"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-
-        android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
 
-        app:layout_constraintLeft_toRightOf="@id/barrabranca"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/rodape"
-        app:layout_constraintStart_toEndOf="@id/barrabranca"
-        />
-
-    <TextView
-        android:id="@+id/contato"
-        android:text="gaiagarden@atedimento.com
-Telefone: (11) 1234-5678 "
-        android:textSize="12sp"
-        android:textStyle="bold"
+        android:text="Fale Conosco"
+        android:textSize="24sp"
         android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
 
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="30dp"
-
-
-        app:layout_constraintLeft_toRightOf="@id/barrabranca"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgfalecnsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@id/rodape"
-        app:layout_constraintStart_toEndOf="@id/barrabranca"
         />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
