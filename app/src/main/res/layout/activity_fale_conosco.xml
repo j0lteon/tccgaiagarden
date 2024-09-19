@@ -31,10 +31,10 @@
 
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginRight="366dp"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/voltar"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
         />
 
@@ -44,15 +44,16 @@
         android:layout_width="wrap_content"
         android:text="Voltar"
 
-        android:layout_marginLeft="5dp"
+        android:layout_marginRight="290dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="18sp"
 
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/seta"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
     <ImageView
