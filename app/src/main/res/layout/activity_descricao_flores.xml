@@ -105,7 +105,7 @@
     <ImageView
 
         android:id="@+id/orquidea"
-        android:src="@drawable/orquidea"
+        android:src="@drawable/muda"
         android:layout_width="match_parent"
         android:layout_height="235dp"
 

@@ -15,7 +15,7 @@
     android:background="#FFFFFF"
     tools:context=".Home">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/logo1"
         style="@style/Logo1"
         android:src="@drawable/gaiagardenlogo"
@@ -43,7 +43,7 @@
         app:layout_constraintBottom_toTopOf="@id/carrossel"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iconmenu"
         android:src="@drawable/menu_home"
 
@@ -74,7 +74,7 @@
         app:layout_constraintStart_toEndOf="@id/iconmenu"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/estrela"
         android:src="@drawable/estrela"
 
@@ -104,7 +104,7 @@
         app:layout_constraintTop_toTopOf="@id/barra"
     />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/carrossel"
 
         android:src="@drawable/retangulo"
@@ -120,10 +120,10 @@
         app:layout_constraintTop_toBottomOf="@id/barra"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/orquidea"
 
-        android:src="@drawable/muda"
+        android:src="@drawable/orquidea"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -167,7 +167,7 @@
         app:layout_constraintTop_toBottomOf="@id/textoorquidea"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/lirio"
 
         android:src="@drawable/liriolaranja"
@@ -214,7 +214,7 @@
         app:layout_constraintTop_toBottomOf="@id/textolirio"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/espadadesaojorge"
 
         android:src="@drawable/espadadesaojorge"
@@ -263,7 +263,7 @@
         app:layout_constraintTop_toBottomOf="@id/textoespada"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/cacto"
 
         android:src="@drawable/cacto"
@@ -312,7 +312,7 @@
         app:layout_constraintTop_toBottomOf="@id/textocacto"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/muda"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -362,7 +362,7 @@
         app:layout_constraintTop_toBottomOf="@id/textomuda"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/floroxa"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -414,7 +414,7 @@
         app:layout_constraintTop_toBottomOf="@id/textoflorroxa"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/costeladeadao"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -465,7 +465,7 @@
         app:layout_constraintTop_toBottomOf="@id/textocostela"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/cacto2"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -516,7 +516,7 @@
         app:layout_constraintTop_toBottomOf="@id/textocacto2"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/girassol"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -568,7 +568,7 @@
         />
 
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/copodeleite"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -618,7 +618,7 @@
         app:layout_constraintTop_toBottomOf="@id/textocopo"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/liriobranco"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -668,7 +668,7 @@
         app:layout_constraintTop_toBottomOf="@id/textoliriobranco"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/anturio"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -774,7 +774,7 @@
         app:layout_constraintEnd_toEndOf="@id/rodape"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgfalecnsc"
         android:layout_width="30dp"
         android:layout_height="40dp"
