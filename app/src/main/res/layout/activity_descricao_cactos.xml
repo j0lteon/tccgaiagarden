@@ -249,6 +249,7 @@
         app:layout_constraintEnd_toEndOf="@id/rodape"
         />
 
+
     <ImageView
         android:id="@+id/imgfalecnsc"
         android:layout_width="30dp"
