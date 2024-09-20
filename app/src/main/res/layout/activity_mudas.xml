@@ -114,7 +114,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/liriobranco"
+        app:layout_constraintBottom_toTopOf="@id/textoflorroxa"
         />
 
     <TextView
@@ -568,7 +568,7 @@
         android:id="@+id/textoazaleia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Antúrio"
+        android:text="Aza"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -612,14 +612,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/azaleia"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cravo"
+        app:layout_constraintBottom_toTopOf="@id/textocravo"
         />
 
     <TextView
         android:id="@+id/textocravo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Antúrio"
+        android:text="Cravo"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
