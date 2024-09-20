@@ -15,10 +15,11 @@ public class Cadastro extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
         Button button = findViewById(R.id.cadastrar);
         button.setOnClickListener(new View.OnClickListener() {
-        @Override
-                public void onClick(View v){
-            Intent it = new Intent(Cadastro.this, Home.class);
-            startActivity(it);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Cadastro.this, Home.class);
+                startActivity(it);
+            }
         });
     }
+}

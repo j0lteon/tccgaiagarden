@@ -10,7 +10,6 @@ import android.view.View;
 
 public class Flores extends AppCompatActivity {
 
-    AppCompatActivity floroxa;
     AppCompatImageView florroxa;
 
     AppCompatImageView muda;
@@ -39,14 +38,15 @@ public class Flores extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flores);
 
-        muda =  findViewById(R.id.orquidea);
+        florroxa =  findViewById(R.id.floroxa);
 
-        muda.setOnClickListener(new View.OnClickListener() {
+        florroxa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Flores.this, DescricaoFlores.class);
+                startActivity(intent);
             }
         });
-        
+
     }
 }
