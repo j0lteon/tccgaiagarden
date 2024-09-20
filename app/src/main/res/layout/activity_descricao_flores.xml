@@ -106,7 +106,7 @@
     <ImageView
 
         android:id="@+id/orquidea"
-        android:src="@drawable/"
+        android:src="@drawable/cactofrailea"
         android:layout_width="match_parent"
         android:layout_height="235dp"
 
@@ -251,7 +251,7 @@
         android:layout_width="30dp"
         android:layout_height="40dp"
 
-        android:src="@drawable/faleconosco"
+        android:src="@drawable/cactofrailea"
 
         android:layout_marginRight="150dp"
         app:layout_constraintStart_toStartOf="@id/barrabranca"
