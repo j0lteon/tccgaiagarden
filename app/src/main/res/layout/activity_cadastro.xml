@@ -174,17 +174,17 @@
     <Button
         android:id="@+id/cadastrar"
         style="@style/Button"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/verde"
         android:text="@string/cadastrar"
         android:textSize="25sp"
-        android:layout_marginTop="30dp"
 
 
-        app:layout_constraintStart_toStartOf="@id/view4"
-        app:layout_constraintTop_toBottomOf="@id/edit_confsenha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="@id/view4"
+        app:layout_constraintTop_toBottomOf="@id/edit_confsenha" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
