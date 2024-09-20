@@ -254,7 +254,7 @@
         android:layout_width="30dp"
         android:layout_height="40dp"
 
-        android:src="@drawable/cactofrailea"
+        android:src="@drawable/faleconosco"
 
         android:layout_marginRight="150dp"
         app:layout_constraintStart_toStartOf="@id/barrabranca"
