@@ -108,7 +108,7 @@
     <ImageView
 
         android:id="@+id/cactos"
-        android:src="@drawable/cacto"
+        android:src="@drawable/cactofrailea"
 
         android:layout_width="match_parent"
         android:layout_height="235dp"
