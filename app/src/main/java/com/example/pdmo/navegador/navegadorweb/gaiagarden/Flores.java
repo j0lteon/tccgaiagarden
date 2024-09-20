@@ -38,9 +38,9 @@ public class Flores extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flores);
 
-        florroxa =  findViewById(R.id.floroxa);
+        muda      =  findViewById(R.id.orquidea);
 
-        florroxa.setOnClickListener(new View.OnClickListener() {
+        muda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Flores.this, DescricaoFlores.class);
