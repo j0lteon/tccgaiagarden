@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Descricao_Produto extends AppCompatActivity {
 
@@ -14,7 +15,7 @@ public class Descricao_Produto extends AppCompatActivity {
 
     AppCompatImageView faleconosco;
 
-    AppCompatImageView home;
+    ImageView home;
 
 
     @Override
@@ -38,11 +39,12 @@ public class Descricao_Produto extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 Intent it = new Intent(Descricao_Produto.this, Meus_Favoritos.class);
                 startActivity(it);
             }
         });
+
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
         faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +54,8 @@ public class Descricao_Produto extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+        home = findViewById(R.id.home);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override

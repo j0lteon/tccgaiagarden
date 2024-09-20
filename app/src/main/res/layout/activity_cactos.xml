@@ -311,7 +311,7 @@
     <ImageView
         android:id="@+id/cacto2"
 
-        android:src="@drawable/cactobola"
+        android:src="@drawable/cacto2"
 
         android:layout_width="100dp"
         android:layout_height="100dp"

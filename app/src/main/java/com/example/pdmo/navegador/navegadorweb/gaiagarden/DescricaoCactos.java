@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class DescricaoCactos extends AppCompatActivity {
 
@@ -15,7 +16,7 @@ public class DescricaoCactos extends AppCompatActivity {
 
     AppCompatImageView faleconosco;
 
-    AppCompatImageView home;
+    ImageView home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,8 @@ public class DescricaoCactos extends AppCompatActivity {
             }
         });
 
+        faleconosco = findViewById(R.id.imgfalecnsc);
+
         faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +55,8 @@ public class DescricaoCactos extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+        home = findViewById(R.id.home);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
