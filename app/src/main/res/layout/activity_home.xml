@@ -7,108 +7,107 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFFFFF"
-    tools:context=".Home">
-    
+    tools:context=".Home"
+    >
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".Home">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/logo1"
-        android:layout_width="130dp"
-        android:layout_height="90dp"
+        style="@style/Logo1"
         android:src="@drawable/gaiagardenlogo"
 
-        app:layout_constraintEnd_toStartOf="@id/container2"
-        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginRight="282dp"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
     <View
-        android:id="@+id/container2"
-        style="@style/ContainerComponents2"
-
-
-        app:layout_constraintBottom_toTopOf="@id/barra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/logo1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
         android:id="@+id/barra"
-        android:layout_width="413dp"
-        android:layout_height="43dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:background="@color/verde"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo1" />
+        android:layout_marginTop="30dp"
 
-    <ImageView
-        android:id="@+id/icon_menu"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="12dp"
-        android:src="@drawable/menu_home"
-        app:layout_constraintEnd_toStartOf="@id/categorias"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/carrossel"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconmenu"
+        android:src="@drawable/menu_home"
+
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="366dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        />
 
     <TextView
         android:id="@+id/categorias"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:text="Categorias"
 
-        android:textColor="@color/white"
-        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
 
         app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/icon_menu"
-        app:layout_constraintEnd_toStartOf="@id/estrela"
-        app:layout_constraintTop_toBottomOf="@id/logo1" />
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/iconmenu"
+        />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/estrela"
         android:src="@drawable/estrela"
 
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
 
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
 
+        app:layout_constraintStart_toEndOf="@id/categorias"
         app:layout_constraintTop_toTopOf="@id/barra"
         app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintEnd_toStartOf="@id/meusfavoritos"
-        app:layout_constraintStart_toEndOf="@id/categorias"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
         android:id="@+id/meusfavoritos"
-        android:text="Meus favoritos"
+        android:text="Meus Favoritos"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
 
-        android:layout_marginLeft="88dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/estrela"
-        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
-        />
+        app:layout_constraintTop_toTopOf="@id/barra"
+    />
 
-    <View
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/carrossel"
-        android:src="@drawable/container_components"
-        android:background="@drawable/retangulo"
+
+        android:src="@drawable/retangulo"
 
         android:layout_width="match_parent"
         android:layout_height="106dp"
@@ -121,18 +120,691 @@
         app:layout_constraintTop_toBottomOf="@id/barra"
         />
 
-    <View
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/orquidea"
-        android:src="@drawable/container_components"
-        android:background="@drawable/cactofrailea"
+
+        android:src="@drawable/orquidea"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
 
+        android:layout_marginTop="276dp"
+
+        app:layout_constraintStart_toEndOf="@id/muda"
+        app:layout_constraintEnd_toStartOf="@id/girassol"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textoorquidea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Orquídea"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/orquidea"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/carrossel"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
+    <TextView
+        android:id="@+id/precoorquidea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoorquidea"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/lirio"
+
+        android:src="@drawable/liriolaranja"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orquidea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textolirio"
+        />
+
+    <TextView
+        android:id="@+id/textolirio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Lírio Laranja"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/lirio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precolirio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textolirio"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/espadadesaojorge"
+
+        android:src="@drawable/espadadesaojorge"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lirio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textoespada"
+
+        />
+
+    <TextView
+        android:id="@+id/textoespada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Espada de São Jorge"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/espadadesaojorge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precoespada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoespada"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cacto"
+
+        android:src="@drawable/cacto"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/espadadesaojorge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textocacto"
+        />
+
+    <TextView
+        android:id="@+id/textocacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Cacto"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+        android:layout_marginBottom="60dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cacto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precocacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocacto"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/muda"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/muda"
+
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="276dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/logo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/floroxa"
+        />
+
+    <TextView
+        android:id="@+id/textomuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muda de Boldo"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda"
+        />
+
+    <TextView
+        android:id="@+id/precomuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomuda"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/floroxa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/florroxa"
+
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/muda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textoflorroxa"
+        />
+
+    <TextView
+        android:id="@+id/textoflorroxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flor Roxa"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/floroxa"
+        />
+
+    <TextView
+        android:id="@+id/precofloroxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoflorroxa"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/costeladeadao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/costeladeadao"
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/floroxa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textocostela"
+        />
+
+    <TextView
+        android:id="@+id/textocostela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Costela de Adão"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/costeladeadao"
+        />
+
+    <TextView
+        android:id="@+id/precocostela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocostela"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cacto2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/cacto2"
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/costeladeadao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textocacto2"
+        />
+
+    <TextView
+        android:id="@+id/textocacto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cacto Orelha de Coelho"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="14sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cacto2"
+        />
+
+    <TextView
+        android:id="@+id/precocacto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocacto2"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/girassol"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/girassol"
+
+        android:layout_marginTop="276dp"
+
+        app:layout_constraintStart_toEndOf="@id/orquidea"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/copodeleite"
+        />
+
+    <TextView
+        android:id="@+id/textogirassol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Girassol"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/girassol"
+        />
+
+    <TextView
+        android:id="@+id/precogirassol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textogirassol"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/copodeleite"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/copodeleite"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="255dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/girassol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/liriobranco"
+        />
+
+    <TextView
+        android:id="@+id/textocopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Copo-de-Leite"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+        android:layout_marginLeft="253dp"
+
+        app:layout_constraintTop_toBottomOf="@id/copodeleite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precocopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocopo"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/liriobranco"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/liriobranco"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="253dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/copodeleite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textoliriobranco"
+        />
+
+    <TextView
+        android:id="@+id/textoliriobranco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Lírio Branco"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+        android:layout_marginLeft="253dp"
+
+        app:layout_constraintTop_toBottomOf="@id/liriobranco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precoliriobranco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoliriobranco"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/anturio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/anturio"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintTop_toBottomOf="@id/liriobranco"
+        app:layout_constraintStart_toEndOf="@id/espadadesaojorge"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textoanturio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Antúrio"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="253dp"
+
+        app:layout_constraintTop_toBottomOf="@id/anturio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precoanturio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:layout_marginLeft="253dp"
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoanturio"
+        />
+
+    <View
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="30dp"
+        android:background="@color/verde"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/precocacto"
+        />
+
+
+    <TextView
+        android:id="@+id/sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Sobre nós:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape" />
+
+    <TextView
+        android:id="@+id/empresa"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="Empresa fundada no ano de 2023. Nosso principal objetivo é levar conforto através das nossas plantas. "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sobre"
+        app:layout_constraintTop_toTopOf="@id/sobre"
+        />
+
+
+    <View
+        android:id="@+id/barrabranca"
+
+        android:background="@color/white"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="@id/rodape"
+        app:layout_constraintStart_toStartOf="@id/rodape"
+        app:layout_constraintEnd_toEndOf="@id/rodape"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgfalecnsc"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/faleconosco"
+
+        android:layout_marginRight="150dp"
+        app:layout_constraintStart_toStartOf="@id/barrabranca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/faleconosco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Fale Conosco"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+
+        app:layout_constraintStart_toEndOf="@id/imgfalecnsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
