@@ -38,6 +38,7 @@ public class Descricao_Produto extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 Intent it = new Intent(Descricao_Produto.this, Meus_Favoritos.class);
                 startActivity(it);
             }
