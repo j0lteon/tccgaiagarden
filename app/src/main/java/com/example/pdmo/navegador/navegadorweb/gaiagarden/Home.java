@@ -57,7 +57,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent it = new Intent(Home.this, Meus_Favoritos.class);
+                Intent it = new Intent(Home.this, Categorias.class);
                 startActivity(it);
             }
         });

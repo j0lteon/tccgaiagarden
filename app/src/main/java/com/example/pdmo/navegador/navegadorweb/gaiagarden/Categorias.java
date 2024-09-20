@@ -30,6 +30,8 @@ public class Categorias extends AppCompatActivity {
 
     private TextView cactos;
 
+    private TextView flores;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,9 +126,21 @@ public class Categorias extends AppCompatActivity {
             Intent it = new Intent(Categorias.this, Cactos.class);
             startActivity(it);
         });
+
+        flores = findViewById(R.id.flores);
+        IniciarComponentes2();
+
+        flores.setOnClickListener((View v) ->{
+            Intent it = new Intent(Categorias.this, Flores.class);
+            startActivity(it);
+        });
     }
     private void IniciarComponentes(){
         cactos = findViewById(R.id.cactos);
 
+    }
+
+    private void IniciarComponentes2(){
+        flores = findViewById(R.id.flores);
     }
 }
