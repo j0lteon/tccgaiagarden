@@ -1,68 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Folhagens">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Folhagens">
 
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="130dp"
-        android:layout_height="90dp"
+        style="@style/Logo1"
         android:src="@drawable/gaiagardenlogo"
 
-        app:layout_constraintEnd_toStartOf="@id/container2"
-        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginRight="282dp"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/barra"
-        />
-
-    <View
-        android:id="@+id/container2"
-        style="@style/ContainerComponents2"
-
-
-        app:layout_constraintBottom_toTopOf="@id/barra"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/logo1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <View
         android:id="@+id/barra"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-
         android:background="@color/verde"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/carrossel"
+        android:layout_marginTop="40dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/espadadesaojorge"
         />
 
     <ImageView
         android:id="@+id/voltar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="12dp"
         android:src="@drawable/seta"
 
-        app:layout_constraintEnd_toStartOf="@id/voltartexto"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="366dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
         />
 
     <TextView
         android:id="@+id/voltartexto"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:text="Voltar"
 
-        android:textColor="@color/white"
-        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
 
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"
@@ -76,42 +79,715 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
 
+        android:layout_marginLeft="80dp"
 
-        app:layout_constraintEnd_toStartOf="@id/meusfavoritos"
+        app:layout_constraintStart_toEndOf="@id/voltartexto"
         app:layout_constraintTop_toTopOf="@id/barra"
         app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/voltartexto"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
         android:id="@+id/meusfavoritos"
-        android:text="Meus favoritos"
+        android:text="Meus Favoritos"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
 
-
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/estrela"
-        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
         />
 
-    <View
-        android:id="@+id/carrossel"
-        android:src="@drawable/container_components"
-        android:background="@drawable/categoriaplantas"
+    <ImageView
+        android:id="@+id/costeladeadao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
 
-        android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="20dp"
+        android:src="@drawable/costeladeadao"
+
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/croton"
+        />
+
+    <TextView
+        android:id="@+id/textocostela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Costela de Adão"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barra" />
+        app:layout_constraintTop_toBottomOf="@id/costeladeadao"
+        />
+
+    <TextView
+        android:id="@+id/precocostela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocostela"
+        />
+
+    <ImageView
+        android:id="@+id/croton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/croton"
+
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/costeladeadao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textocroton"
+        />
+
+    <TextView
+        android:id="@+id/textocroton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cróton"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/croton"
+        />
+
+    <TextView
+        android:id="@+id/precocroton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocroton"
+        />
+
+    <ImageView
+        android:id="@+id/cancaodaindia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/cancaodaindia"
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/croton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textocancao"
+        />
+
+    <TextView
+        android:id="@+id/textocancao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canção da Índia"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cancaodaindia"
+        />
+
+    <TextView
+        android:id="@+id/precocancao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocancao"
+        />
+
+    <ImageView
+        android:id="@+id/comigoninguempode"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/comigoninguempode"
+        android:layout_marginRight="253dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cancaodaindia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textocomigo"
+        />
+
+    <TextView
+        android:id="@+id/textocomigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comigo Ninguém Pode"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="255dp"
+
+        android:textSize="14sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comigoninguempode"
+        />
+
+    <TextView
+        android:id="@+id/precocomigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="40dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocomigo"
+        />
+
+    <ImageView
+        android:id="@+id/espadadesaojorge"
+
+        android:src="@drawable/espadadesaojorge"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textoespada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Espada de São Jorge"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="14sp"
+
+        app:layout_constraintTop_toBottomOf="@id/espadadesaojorge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precoorquidea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoespada"
+        />
+
+    <ImageView
+        android:id="@+id/medalhaocalathea"
+
+        android:src="@drawable/medalhaocalathea"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/espadadesaojorge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textomedalhao"
+        />
+
+    <TextView
+        android:id="@+id/textomedalhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Medalhão Calathea"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/medalhaocalathea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precomedalhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textomedalhao"
+        />
+
+    <ImageView
+        android:id="@+id/samambaia"
+
+        android:src="@drawable/sambaia"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/medalhaocalathea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textosamambaia"
+
+        />
+
+    <TextView
+        android:id="@+id/textosamambaia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Samambaia"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/samambaia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precosamambaia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textosamambaia"
+        />
+
+    <ImageView
+        android:id="@+id/fitonia"
+
+        android:src="@drawable/fitonia"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/samambaia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textofitonia"
+        />
+
+    <TextView
+        android:id="@+id/textofitonia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Fitônia"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:textSize="15sp"
+        android:layout_marginBottom="60dp"
+
+        app:layout_constraintTop_toBottomOf="@id/fitonia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precofitonia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textofitonia"
+        />
+
+    <ImageView
+        android:id="@+id/jiboia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/jiboia"
+
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintStart_toEndOf="@id/espadadesaojorge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ficus"
+        />
+
+    <TextView
+        android:id="@+id/textojiboia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jibóia"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jiboia"
+        />
+
+    <TextView
+        android:id="@+id/precojiboia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textojiboia"
+        />
+
+    <ImageView
+        android:id="@+id/ficus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/ficus"
+
+        android:layout_marginLeft="256dp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jiboia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/coracaopartido"
+
+        />
+
+    <TextView
+        android:id="@+id/textoficus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Figueira"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ficus"
+        />
+
+    <TextView
+        android:id="@+id/precoficus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoficus"
+        />
+
+    <ImageView
+        android:id="@+id/coracaopartido"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/coracaopartido"
+
+        android:layout_marginTop="50dp"
+
+        android:layout_marginLeft="256dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ficus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dinheiroempenca"
+        />
+
+    <TextView
+        android:id="@+id/textocoracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antúrio"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coracaopartido"
+        />
+
+    <TextView
+        android:id="@+id/precocoracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textocoracao"
+        />
+
+    <ImageView
+        android:id="@+id/dinheiroempenca"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/dinheiroempenca"
+
+        android:layout_marginTop="50dp"
+
+        android:layout_marginLeft="256dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coracaopartido"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textodinheiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinheiro em Penca"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="255dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dinheiroempenca"
+        />
+
+    <TextView
+        android:id="@+id/precobromelia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 6,50"
+
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginLeft="253dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textodinheiro"
+        />
+
+    <View
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="30dp"
+        android:background="@color/verde"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/precofitonia"
+        />
+
+
+    <TextView
+        android:id="@+id/sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Sobre nós:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape" />
+
+    <TextView
+        android:id="@+id/empresa"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="Empresa fundada no ano de 2023. Nosso principal objetivo é levar conforto através das nossas plantas. "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sobre"
+        app:layout_constraintTop_toTopOf="@id/sobre"
+        />
+
+
+    <View
+        android:id="@+id/barrabranca"
+
+        android:background="@color/white"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="@id/rodape"
+        app:layout_constraintStart_toStartOf="@id/rodape"
+        app:layout_constraintEnd_toEndOf="@id/rodape"
+        />
+
+    <ImageView
+        android:id="@+id/imgfalecnsc"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/faleconosco"
+
+        android:layout_marginRight="150dp"
+        app:layout_constraintStart_toStartOf="@id/barrabranca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/faleconosco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Fale Conosco"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+
+        app:layout_constraintStart_toEndOf="@id/imgfalecnsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rodape"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

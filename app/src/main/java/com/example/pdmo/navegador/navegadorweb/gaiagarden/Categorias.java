@@ -13,11 +13,5 @@ public class Categorias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categorias);
 
-        Button botao = findViewById(R.id.categoriaplantas);
-
-        botao.setOnClickListener((view) -> {
-                    Intent intent = new Intent(this, Plantas.class);
-                    startActivity(intent);
-                });
     }
 }

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Mudas"
-    android:orientation="vertical"
     android:background="#FFFFFF"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    >
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Mudas">
+
     <ImageView
         android:id="@+id/logo1"
         style="@style/Logo1"
@@ -37,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/orquidea"
+        app:layout_constraintBottom_toTopOf="@id/muda2"
         />
 
     <ImageView
@@ -102,11 +103,11 @@
         />
 
     <ImageView
-        android:id="@+id/floroxa"
+        android:id="@+id/muda"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/florroxa"
+        android:src="@drawable/muda"
 
         android:layout_marginRight="253dp"
         android:layout_marginTop="180dp"
@@ -114,14 +115,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textoflorroxa"
+        app:layout_constraintBottom_toTopOf="@id/muda4"
         />
 
     <TextView
-        android:id="@+id/textoflorroxa"
+        android:id="@+id/textomuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Flor Roxa"
+        android:text="Boldo"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -131,11 +132,11 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/floroxa"
+        app:layout_constraintTop_toBottomOf="@id/muda"
         />
 
     <TextView
-        android:id="@+id/precofloroxa"
+        android:id="@+id/precomuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 6,50"
@@ -148,27 +149,27 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoflorroxa"
+        app:layout_constraintTop_toBottomOf="@id/textomuda"
         />
 
     <ImageView
-        android:id="@+id/liriobranco"
+        android:id="@+id/muda4"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/liriobranco"
+        android:src="@drawable/muda4"
 
         android:layout_marginRight="253dp"
         android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/floroxa"
+        app:layout_constraintTop_toBottomOf="@id/muda"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textoliriobranco"
+        app:layout_constraintBottom_toTopOf="@id/textomuda4"
         />
 
     <TextView
-        android:id="@+id/textoliriobranco"
+        android:id="@+id/textomuda4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lírio Branco"
@@ -182,11 +183,11 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/liriobranco"
+        app:layout_constraintTop_toBottomOf="@id/muda4"
         />
 
     <TextView
-        android:id="@+id/precoliriobranco"
+        android:id="@+id/precomuda4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 6,50"
@@ -200,26 +201,26 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoliriobranco"
+        app:layout_constraintTop_toBottomOf="@id/textomuda4"
         />
 
     <ImageView
-        android:id="@+id/copodeleite"
+        android:id="@+id/muda7"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/copodeleite"
+        android:src="@drawable/muda7"
         android:layout_marginRight="253dp"
         android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/liriobranco"
+        app:layout_constraintTop_toBottomOf="@id/muda4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textocopo"
+        app:layout_constraintBottom_toTopOf="@id/textomuda7"
         />
 
     <TextView
-        android:id="@+id/textocopo"
+        android:id="@+id/textomuda7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Copo de Leite"
@@ -233,11 +234,11 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/copodeleite"
+        app:layout_constraintTop_toBottomOf="@id/muda7"
         />
 
     <TextView
-        android:id="@+id/precocopo"
+        android:id="@+id/precomuda7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 6,50"
@@ -251,29 +252,29 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textocopo"
+        app:layout_constraintTop_toBottomOf="@id/textomuda7"
         />
 
     <ImageView
-        android:id="@+id/girassol"
+        android:id="@+id/muda10"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/girassol"
+        android:src="@drawable/muda10"
         android:layout_marginRight="253dp"
         android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/copodeleite"
+        app:layout_constraintTop_toBottomOf="@id/muda7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textogirassol"
+        app:layout_constraintBottom_toTopOf="@id/textomuda10"
         />
 
     <TextView
-        android:id="@+id/textogirassol"
+        android:id="@+id/textomuda10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Girassol"
+        android:text="Alface D' Água"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -284,14 +285,14 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/girassol"
+        app:layout_constraintTop_toBottomOf="@id/muda10"
         />
 
     <TextView
-        android:id="@+id/precogirassol"
+        android:id="@+id/precomuda10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 2,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -302,13 +303,13 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textogirassol"
+        app:layout_constraintTop_toBottomOf="@id/textomuda10"
         />
 
     <ImageView
-        android:id="@+id/orquidea"
+        android:id="@+id/muda2"
 
-        android:src="@drawable/orquidea"
+        android:src="@drawable/muda2"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -321,26 +322,26 @@
         />
 
     <TextView
-        android:id="@+id/textoorquidea"
+        android:id="@+id/textomuda2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Orquídea"
+        android:text="Arruda"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
         android:textSize="15sp"
 
-        app:layout_constraintTop_toBottomOf="@id/orquidea"
+        app:layout_constraintTop_toBottomOf="@id/muda2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
-        android:id="@+id/precoorquidea"
+        android:id="@+id/precomuda2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 19,90"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -349,26 +350,26 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoorquidea"
+        app:layout_constraintTop_toBottomOf="@id/textomuda2"
         />
 
     <ImageView
-        android:id="@+id/rosas"
+        android:id="@+id/muda5"
 
-        android:src="@drawable/rosas"
+        android:src="@drawable/muda5"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/orquidea"
+        app:layout_constraintTop_toBottomOf="@id/muda2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textorosas"
+        app:layout_constraintBottom_toTopOf="@id/textomuda5"
         />
 
     <TextView
-        android:id="@+id/textorosas"
+        android:id="@+id/textomuda5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -378,13 +379,13 @@
         android:textColor="@color/texto"
         android:textSize="15sp"
 
-        app:layout_constraintTop_toBottomOf="@id/rosas"
+        app:layout_constraintTop_toBottomOf="@id/muda5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
-        android:id="@+id/precorosas"
+        android:id="@+id/precomuda5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 6,50"
@@ -396,13 +397,13 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textorosas"
+        app:layout_constraintTop_toBottomOf="@id/textomuda5"
         />
 
     <ImageView
-        android:id="@+id/margaridas"
+        android:id="@+id/muda8"
 
-        android:src="@drawable/margaridas"
+        android:src="@drawable/muda8"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -410,33 +411,33 @@
         android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rosas"
+        app:layout_constraintTop_toBottomOf="@id/muda5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textomargaridas"
+        app:layout_constraintBottom_toTopOf="@id/textomuda8"
 
         />
 
     <TextView
-        android:id="@+id/textomargaridas"
+        android:id="@+id/textomuda8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Margarida"
+        android:text="Alface Lisa"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
         android:textSize="15sp"
 
-        app:layout_constraintTop_toBottomOf="@id/margaridas"
+        app:layout_constraintTop_toBottomOf="@id/muda8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
-        android:id="@+id/precomargaridas"
+        android:id="@+id/precomuda8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 2,65"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -445,13 +446,13 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textomargaridas"
+        app:layout_constraintTop_toBottomOf="@id/textomuda8"
         />
 
     <ImageView
-        android:id="@+id/liriolaranja"
+        android:id="@+id/muda11"
 
-        android:src="@drawable/liriolaranja"
+        android:src="@drawable/muda11"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -459,33 +460,33 @@
         android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/margaridas"
+        app:layout_constraintTop_toBottomOf="@id/muda8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textoliriolaranja"
+        app:layout_constraintBottom_toTopOf="@id/textomuda11"
         />
 
     <TextView
-        android:id="@+id/textoliriolaranja"
+        android:id="@+id/textomuda11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Lírio Laranja"
+        android:text="Clúsia"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
         android:textSize="15sp"
         android:layout_marginBottom="60dp"
 
-        app:layout_constraintTop_toBottomOf="@id/liriolaranja"
+        app:layout_constraintTop_toBottomOf="@id/muda11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
-        android:id="@+id/precoliriolaranja"
+        android:id="@+id/precomuda11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 12,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -494,29 +495,29 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoliriolaranja"
+        app:layout_constraintTop_toBottomOf="@id/textomuda11"
         />
 
     <ImageView
-        android:id="@+id/anturio"
+        android:id="@+id/muda3"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/mudaanturio"
+        android:src="@drawable/muda3"
 
         android:layout_marginTop="180dp"
 
-        app:layout_constraintStart_toEndOf="@id/orquidea"
+        app:layout_constraintStart_toEndOf="@id/muda2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/azaleia"
+        app:layout_constraintBottom_toTopOf="@id/muda6"
         />
 
     <TextView
-        android:id="@+id/textoanturio"
+        android:id="@+id/textomuda3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Antúrio"
+        android:text="Cipó Jagube"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -526,14 +527,14 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/anturio"
+        app:layout_constraintTop_toBottomOf="@id/muda3"
         />
 
     <TextView
-        android:id="@+id/precoanturio"
+        android:id="@+id/precomuda3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 19,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -543,32 +544,32 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoanturio"
+        app:layout_constraintTop_toBottomOf="@id/textomuda3"
         />
 
     <ImageView
-        android:id="@+id/azaleia"
+        android:id="@+id/muda6"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/azaleias"
+        android:src="@drawable/muda6"
 
         android:layout_marginLeft="256dp"
 
         android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/anturio"
+        app:layout_constraintTop_toBottomOf="@id/muda3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cravo"
+        app:layout_constraintBottom_toTopOf="@id/muda9"
 
         />
 
     <TextView
-        android:id="@+id/textoazaleia"
+        android:id="@+id/textomuda6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aza"
+        android:text="Erva Baleeira"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -578,14 +579,14 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/azaleia"
+        app:layout_constraintTop_toBottomOf="@id/muda6"
         />
 
     <TextView
-        android:id="@+id/precoazaleia"
+        android:id="@+id/precomuda6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 29,99"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -595,31 +596,31 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoazaleia"
+        app:layout_constraintTop_toBottomOf="@id/textomuda6"
         />
 
     <ImageView
-        android:id="@+id/cravo"
+        android:id="@+id/muda9"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/cravo"
+        android:src="@drawable/muda9"
 
         android:layout_marginTop="50dp"
 
         android:layout_marginLeft="256dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/azaleia"
+        app:layout_constraintTop_toBottomOf="@id/muda6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textocravo"
+        app:layout_constraintBottom_toTopOf="@id/muda12"
         />
 
     <TextView
-        android:id="@+id/textocravo"
+        android:id="@+id/textomuda9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cravo"
+        android:text="Quisquales"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -629,11 +630,11 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cravo"
+        app:layout_constraintTop_toBottomOf="@id/muda9"
         />
 
     <TextView
-        android:id="@+id/precocravo"
+        android:id="@+id/precomuda9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 6,50"
@@ -646,31 +647,31 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textocravo"
+        app:layout_constraintTop_toBottomOf="@id/textomuda9"
         />
 
     <ImageView
-        android:id="@+id/bromelia"
+        android:id="@+id/muda12"
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/bromelia"
+        android:src="@drawable/muda12"
 
         android:layout_marginTop="50dp"
 
         android:layout_marginLeft="256dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cravo"
+        app:layout_constraintTop_toBottomOf="@id/muda9"
         app:layout_constraintEnd_toEndOf="parent"
 
         />
 
     <TextView
-        android:id="@+id/textobromelia"
+        android:id="@+id/textomuda12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Antúrio"
+        android:text="Hortelã"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -680,14 +681,14 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bromelia"
+        app:layout_constraintTop_toBottomOf="@id/muda12"
         />
 
     <TextView
-        android:id="@+id/precobromelia"
+        android:id="@+id/precomuda12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 2,90"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -697,7 +698,7 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textobromelia"
+        app:layout_constraintTop_toBottomOf="@id/textomuda12"
         />
 
     <View
@@ -711,7 +712,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precogirassol"
+        app:layout_constraintTop_toBottomOf="@id/precomuda11"
         />
 
 
