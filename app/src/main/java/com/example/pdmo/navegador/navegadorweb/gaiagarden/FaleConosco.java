@@ -39,6 +39,7 @@ public class FaleConosco extends AppCompatActivity {
                 Intent it =  new Intent(FaleConosco.this, Home.class);
                 startActivity(it);
 
+
             }
         });
 

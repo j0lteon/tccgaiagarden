@@ -54,6 +54,7 @@
         app:layout_constraintBottom_toBottomOf="@id/barra"
         />
 
+
     <TextView
         android:id="@+id/hometexto"
         android:layout_height="wrap_content"

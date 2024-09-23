@@ -59,5 +59,27 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
+        faleconosco = findViewById(R.id.imgfalecnsc);
+
+        faleconosco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent it = new Intent(Folhagens.this, FaleConosco.class);
+                startActivity(it);
+            }
+        });
+
+        gaiagardenlogo = findViewById(R.id.logo1);
+
+        gaiagardenlogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent it = new Intent(Folhagens.this, Home.class);
+                startActivity(it);
+            }
+        });
+
     }
 }
