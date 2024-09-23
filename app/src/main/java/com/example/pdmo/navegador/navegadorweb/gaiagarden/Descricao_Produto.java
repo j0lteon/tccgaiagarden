@@ -17,6 +17,9 @@ public class Descricao_Produto extends AppCompatActivity {
 
     ImageView home;
 
+    ImageView gaiagardenlogo;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +69,31 @@ public class Descricao_Produto extends AppCompatActivity {
             }
         });
 
+        gaiagardenlogo = findViewById(R.id.logo1);
+
+        gaiagardenlogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent it = new Intent(Descricao_Produto.this, Home.class);
+                startActivity(it);
+            }
+        });
+
+        Button addfav = findViewById(R.id.addfav);
+
+            addfav.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent it =  new Intent(Descricao_Produto.this, Meus_Favoritos.class);
+                    startActivity(it);
+
+                }
+            });
+        }
+
+
+
     }
 
-}
 

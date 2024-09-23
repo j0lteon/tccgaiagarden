@@ -13,6 +13,7 @@ public class DescricaoCactos extends AppCompatActivity {
 
     AppCompatImageView estrela;
 
+    ImageView gaiagardenlogo;
 
     AppCompatImageView faleconosco;
 
@@ -67,5 +68,24 @@ public class DescricaoCactos extends AppCompatActivity {
             }
         });
 
+        gaiagardenlogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                 Intent it = new Intent(DescricaoCactos.this, Home.class);
+
+            }
+        });
+
+        Button addfav = findViewById(R.id.addfav);
+
+        addfav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it =  new Intent(DescricaoCactos.this, Meus_Favoritos.class);
+                startActivity(it);
+
+            }
+        });
+     }
     }
-}
