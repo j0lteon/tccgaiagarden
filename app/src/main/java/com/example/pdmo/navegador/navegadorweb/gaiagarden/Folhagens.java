@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Folhagens extends AppCompatActivity {
 
@@ -19,7 +20,15 @@ public class Folhagens extends AppCompatActivity {
 
     ImageView estrela;
 
-    AppCompatImageView faleconosco;
+    AppCompatImageView imgfalecncs;
+
+    private TextView voltartexto;
+
+    private TextView meusfavoritos;
+
+    private TextView textoespada;
+
+    private TextView faleconosco;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +57,16 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
+        voltartexto = findViewById(R.id.voltartexto);
+
+        voltartexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Folhagens.this, Cadastro.class);
+                startActivity(it);
+            }
+        });
+
         estrela = findViewById(R.id.estrela);
 
         estrela.setOnClickListener(new View.OnClickListener() {
@@ -59,9 +78,9 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.imgfalecnsc);
+        imgfalecncs = findViewById(R.id.imgfalecnsc);
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        imgfalecncs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -81,5 +100,25 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void IniciarComponentes() {
+
+        voltartexto = findViewById(R.id.voltartexto);
+    }
+
+    private void IniciarComponentes2() {
+
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+    }
+
+    private void IniciarComponentes3() {
+
+        textoespada = findViewById(R.id.textoespada);
+    }
+
+    private void IniciarComponentes4() {
+
+        faleconosco = findViewById(R.id.faleconosco);
     }
 }

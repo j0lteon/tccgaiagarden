@@ -14,7 +14,7 @@ public class Categorias extends AppCompatActivity {
 
     AppCompatImageView estrela;
 
-    AppCompatImageView faleconosco;
+    AppCompatImageView imgfalecnsc;
 
     ImageView categoriacacto;
 
@@ -35,6 +35,12 @@ public class Categorias extends AppCompatActivity {
     private TextView folhagens;
 
     private TextView mudas;
+
+    private TextView meusfavoritos;
+
+    private TextView faleconosco;
+
+    private TextView hometexto;
 
 
     @Override
@@ -62,6 +68,17 @@ public class Categorias extends AppCompatActivity {
             }
         });
 
+        hometexto = findViewById(R.id.hometexto);
+        IniciarComponentes7();
+
+        hometexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Categorias.this, Home.class);
+                startActivity(it);
+            }
+        });
+
         estrela = findViewById(R.id.estrela);
 
         estrela.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +90,29 @@ public class Categorias extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.imgfalecnsc);
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+        IniciarComponentes5();
+
+        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Categorias.this, Meus_Favoritos.class);
+                startActivity(it);
+            }
+        });
+
+        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+
+        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Categorias.this, FaleConosco.class);
+                startActivity(it);
+            }
+        });
+
+        faleconosco = findViewById(R.id.faleconosco);
+        IniciarComponentes6();
 
         faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +120,7 @@ public class Categorias extends AppCompatActivity {
                 Intent it = new Intent(Categorias.this, FaleConosco.class);
                 startActivity(it);
             }
-        });
+    });
 
         categoriacacto = findViewById(R.id.categoriacactos);
 
@@ -118,7 +157,7 @@ public class Categorias extends AppCompatActivity {
         categoriaplantas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(Categorias.this, Plantas.class);
+                Intent it = new Intent(Categorias.this, Folhagens.class);
                 startActivity(it);
             }
         });
@@ -126,36 +165,80 @@ public class Categorias extends AppCompatActivity {
         cactos = findViewById(R.id.cactos);
         IniciarComponentes();
 
-        cactos.setOnClickListener((View v) ->{
-            Intent it = new Intent(Categorias.this, Cactos.class);
-            startActivity(it);
+        cactos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Categorias.this, Cactos.class);
+                startActivity(it);
+            }
         });
 
         flores = findViewById(R.id.flores);
         IniciarComponentes2();
 
-        flores.setOnClickListener((View v) ->{
-            Intent it = new Intent(Categorias.this, Flores.class);
-            startActivity(it);
+        flores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Categorias.this, Flores.class);
+                startActivity(it);
+            }
         });
 
         folhagens = findViewById(R.id.folhagens);
         IniciarComponentes3();
 
-        folhagens.setOnClickListener((View v) ->{
-            Intent it = new Intent(Categorias.this, Folhagens.class);
+        folhagens.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Categorias.this, Folhagens.class);
+                startActivity(it);
+            }
+        });
+
+        mudas = findViewById(R.id.mudas);
+        IniciarComponentes4();
+
+        mudas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Categorias.this, Mudas.class);
+                startActivity(it);
+            }
         });
 
     }
-    private void IniciarComponentes(){
+
+    private void IniciarComponentes() {
         cactos = findViewById(R.id.cactos);
 
     }
-    private void IniciarComponentes2(){
+
+    private void IniciarComponentes2() {
         flores = findViewById(R.id.flores);
     }
-}
-    private void IniciarComponentes3(){
-        flores = findViewById(R.id.folhagens);
+
+    private void IniciarComponentes3() {
+
+        folhagens = findViewById(R.id.folhagens);
+    }
+
+    private void IniciarComponentes4() {
+
+        mudas = findViewById(R.id.mudas);
+    }
+
+    private void IniciarComponentes5() {
+
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+    }
+
+    private void IniciarComponentes6() {
+
+        faleconosco = findViewById(R.id.faleconosco);
+    }
+
+    private void IniciarComponentes7() {
+
+        hometexto = findViewById(R.id.hometexto);
     }
 }
