@@ -69,6 +69,8 @@ public class DescricaoCactos extends AppCompatActivity {
             }
         });
 
+        gaiagardenlogo = findViewById(R.id.logo1);
+
         gaiagardenlogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
