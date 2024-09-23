@@ -198,6 +198,7 @@ public class Home extends AppCompatActivity {
     }
 
     private void IniciarComponentes(){
+
         categorias = findViewById(R.id.categorias);
     }
 

@@ -46,6 +46,17 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
+        textoespada = findViewById(R.id.textoespada);
+        IniciarComponentes3();
+
+        textoespada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Folhagens.this, Descricao_Produto.class);
+                startActivity(it);
+            }
+        });
+
         seta = findViewById(R.id.voltar);
 
         seta.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +69,7 @@ public class Folhagens extends AppCompatActivity {
         });
 
         voltartexto = findViewById(R.id.voltartexto);
-
+        IniciarComponentes();
         voltartexto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,12 +89,33 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+        IniciarComponentes2();
+
+        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Folhagens.this, Meus_Favoritos.class);
+                startActivity(it);
+            }
+        });
+
         imgfalecncs = findViewById(R.id.imgfalecnsc);
 
         imgfalecncs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent it = new Intent(Folhagens.this, FaleConosco.class);
+                startActivity(it);
+            }
+        });
+
+        faleconosco = findViewById(R.id.faleconosco);
+        IniciarComponentes4();
+        faleconosco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent it = new Intent(Folhagens.this, FaleConosco.class);
                 startActivity(it);
             }

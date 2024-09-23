@@ -106,7 +106,7 @@
     <ImageView
 
         android:id="@+id/orquidea"
-        android:src="@drawable/cactofrailea"
+        android:src="@drawable/orquidea"
         android:layout_width="match_parent"
         android:layout_height="235dp"
 

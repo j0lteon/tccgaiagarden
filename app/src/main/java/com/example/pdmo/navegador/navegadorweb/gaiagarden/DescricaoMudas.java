@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class DescricaoMudas extends AppCompatActivity {
 
@@ -15,9 +16,15 @@ public class DescricaoMudas extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    AppCompatImageView faleconosco;
+    AppCompatImageView imgfalecnsc;
 
     ImageView home;
+
+    private TextView faleconosco;
+
+    private TextView hometexto;
+
+    private TextView meusfavoritos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +52,33 @@ public class DescricaoMudas extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.imgfalecnsc);
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+        IniciarComponentes3();
+        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(DescricaoMudas.this, Meus_Favoritos.class);
+                startActivity(it);
+            }
+        });
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+
+        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent it = new Intent(DescricaoMudas.this, FaleConosco.class);
+                startActivity(it);
+            }
+        });
+
+        faleconosco = findViewById(R.id.faleconosco);
+        IniciarComponentes();
+
+        faleconosco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent it = new Intent(DescricaoMudas.this, FaleConosco.class);
                 startActivity(it);
             }
@@ -62,6 +90,17 @@ public class DescricaoMudas extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent it = new Intent(DescricaoMudas.this, Home.class);
+                startActivity(it);
+            }
+        });
+
+        hometexto = findViewById(R.id.hometexto);
+        IniciarComponentes2();
+
+        hometexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent it = new Intent(DescricaoMudas.this, Home.class);
                 startActivity(it);
             }
@@ -79,5 +118,19 @@ public class DescricaoMudas extends AppCompatActivity {
         });
 
 
+    }
+    private void IniciarComponentes(){
+
+        faleconosco = findViewById(R.id.faleconosco);
+    }
+
+    private void IniciarComponentes2(){
+
+        hometexto = findViewById(R.id.hometexto);
+    }
+
+    private void IniciarComponentes3(){
+
+        meusfavoritos = findViewById(R.id.meusfavoritos);
     }
 }

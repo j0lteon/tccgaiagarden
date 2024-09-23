@@ -7,40 +7,89 @@ import androidx.appcompat.widget.AppCompatImageView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Flores extends AppCompatActivity {
 
-    AppCompatImageView florroxa;
+    ImageView orquidea;
 
-    AppCompatImageView muda;
+    ImageView seta;
 
-    AppCompatImageView anturio;
+    ImageView gaiagardenlogo;
 
-    AppCompatImageView liriobranco;
+    ImageView estrela;
 
-    AppCompatImageView rosas;
+    ImageView imgfalecnsc;
 
-    AppCompatImageView azaleias;
+    private TextView voltartexto;
 
-    AppCompatImageView copodeleite;
+    private TextView meusfavoritos;
 
-    AppCompatImageView margaridas;
+    private TextView textoorquidea;
 
-    AppCompatImageView cravo;
+    private TextView faleconosco;
 
-    AppCompatImageView girassol;
-
-    AppCompatImageView liriolaranja;
-
-    AppCompatImageView bromelia;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flores);
 
-        muda      =  findViewById(R.id.orquidea);
+        gaiagardenlogo = findViewById(R.id.logo1);
 
-        muda.setOnClickListener(new View.OnClickListener() {
+        gaiagardenlogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, Home.class);
+                startActivity(it);
+            }
+        });
+
+        estrela = findViewById(R.id.estrela);
+
+        estrela.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, Meus_Favoritos.class);
+                startActivity(it);
+            }
+        });
+
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+        IniciarComponentes3();
+
+        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, Meus_Favoritos.class);
+                startActivity(it);
+            }
+        });
+
+        seta = findViewById(R.id.voltar);
+
+        seta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, Categorias.class);
+                startActivity(it);
+            }
+        });
+
+        voltartexto = findViewById(R.id.voltartexto);
+        IniciarComponentes2();
+
+        voltartexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, Categorias.class);
+                startActivity(it);
+            }
+        });
+
+        orquidea = findViewById(R.id.orquidea);
+
+        orquidea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Flores.this, DescricaoFlores.class);
@@ -48,5 +97,57 @@ public class Flores extends AppCompatActivity {
             }
         });
 
+        textoorquidea = findViewById(R.id.textoorquidea);
+        IniciarComponentes4();
+
+        textoorquidea.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, DescricaoFlores.class);
+                startActivity(it);
+            }
+        });
+
+
+        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+
+        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, FaleConosco.class);
+                startActivity(it);
+            }
+        });
+
+        faleconosco = findViewById(R.id.faleconosco);
+        IniciarComponentes();
+
+        faleconosco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Flores.this, FaleConosco.class);
+                startActivity(it);
+            }
+        });
+    }
+
+    private void IniciarComponentes(){
+
+        faleconosco = findViewById(R.id.faleconosco);
+    }
+
+    private void IniciarComponentes2(){
+
+        voltartexto = findViewById(R.id.voltartexto);
+    }
+
+    private void IniciarComponentes3(){
+
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+    }
+
+    private void IniciarComponentes4(){
+
+        textoorquidea = findViewById(R.id.textoorquidea);
     }
 }

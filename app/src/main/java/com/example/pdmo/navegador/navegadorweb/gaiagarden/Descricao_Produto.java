@@ -8,18 +8,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Descricao_Produto extends AppCompatActivity {
 
     AppCompatImageView estrela;
 
-    AppCompatImageView faleconosco;
+    AppCompatImageView imgfalecnsc;
 
     ImageView home;
 
     ImageView gaiagardenlogo;
 
+    private TextView faleconosco;
 
+    private TextView hometexto;
+
+    private TextView meusfavoritos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,12 +52,34 @@ public class Descricao_Produto extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.imgfalecnsc);
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+        IniciarComponentes3();
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Descricao_Produto.this, Meus_Favoritos.class);
+                startActivity(it);
+            }
+        });
+
+        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+
+        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent it = new Intent(Descricao_Produto.this, FaleConosco.class);
+                startActivity(it);
+            }
+        });
+
+        faleconosco = findViewById(R.id.faleconosco);
+        IniciarComponentes();
+
+        faleconosco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent it = new Intent(Descricao_Produto.this, FaleConosco.class);
                 startActivity(it);
             }
@@ -64,6 +91,17 @@ public class Descricao_Produto extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent it = new Intent(Descricao_Produto.this, Home.class);
+                startActivity(it);
+            }
+        });
+
+        hometexto = findViewById(R.id.hometexto);
+        IniciarComponentes2();
+
+        hometexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent it = new Intent(Descricao_Produto.this, Home.class);
                 startActivity(it);
             }
@@ -93,8 +131,20 @@ public class Descricao_Produto extends AppCompatActivity {
             });
         }
 
+    private void IniciarComponentes(){
 
-
+        faleconosco = findViewById(R.id.faleconosco);
     }
+
+    private void IniciarComponentes2(){
+
+        hometexto = findViewById(R.id.hometexto);
+    }
+
+    private void IniciarComponentes3(){
+
+        meusfavoritos = findViewById(R.id.meusfavoritos);
+    }
+}
 
 
