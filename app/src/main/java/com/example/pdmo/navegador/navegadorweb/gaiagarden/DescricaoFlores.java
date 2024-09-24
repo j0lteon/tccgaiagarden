@@ -23,7 +23,7 @@ public class DescricaoFlores extends AppCompatActivity {
 
     private TextView faleconosco;
 
-    private TextView voltartexto;
+    private TextView hometexto;
 
     private TextView meusfavoritos;
 
@@ -82,7 +82,7 @@ public class DescricaoFlores extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent it = new Intent(DescricaoFlores.this, Home.class);
-
+                startActivity(it);
             }
         });
 
@@ -97,10 +97,10 @@ public class DescricaoFlores extends AppCompatActivity {
             }
         });
 
-        voltartexto = findViewById(R.id.voltartexto);
+        hometexto = findViewById(R.id.hometexto);
         IniciarComponentes2();
 
-        voltartexto.setOnClickListener(new View.OnClickListener() {
+        hometexto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(DescricaoFlores.this, Home.class);
@@ -127,7 +127,7 @@ public class DescricaoFlores extends AppCompatActivity {
 
     private void IniciarComponentes2(){
 
-        voltartexto = findViewById(R.id.voltartexto);
+        hometexto = findViewById(R.id.hometexto);
     }
 
     private void IniciarComponentes3(){

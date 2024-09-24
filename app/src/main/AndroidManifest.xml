@@ -33,7 +33,7 @@
             android:exported="true" />
         <activity
             android:name=".DescricaoFlores"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Login2"
             android:exported="true" >
@@ -48,22 +48,27 @@
             android:exported="false" />
         <activity
             android:name=".Meus_Favoritos"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Home"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Flores"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Descricao_Produto"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Categorias"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Cadastro"
-            android:exported="false" />
+            android:exported="true" />
+
+        <activity
+            android:name=".DescricaoMudas"
+            android:exported="true"
+            />
 
     </application>
 
