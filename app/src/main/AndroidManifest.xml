@@ -47,9 +47,6 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Plantas"
-            android:exported="false" />
-        <activity
             android:name=".Meus_Favoritos"
             android:exported="false" />
         <activity
