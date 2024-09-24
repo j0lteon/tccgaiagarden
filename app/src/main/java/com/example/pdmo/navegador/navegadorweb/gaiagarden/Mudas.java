@@ -1,7 +1,6 @@
 package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +10,7 @@ import android.widget.TextView;
 
 public class Mudas extends AppCompatActivity {
 
-    AppCompatImageView muda;
+    ImageView muda;
 
     ImageView seta;
 
@@ -19,7 +18,7 @@ public class Mudas extends AppCompatActivity {
 
     ImageView estrela;
 
-    AppCompatImageView imgfalecncs;
+    ImageView imgfalecncs;
 
     private TextView textomuda;
 

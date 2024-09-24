@@ -5,14 +5,13 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
 
     AppCompatImageView estrela;
+
     AppCompatImageView imgfalecnsc;
 
     AppCompatImageView menu_home;
@@ -185,7 +184,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        textomuda = findViewById(R.id.muda);
+        textomuda = findViewById(R.id.textomuda);
         IniciarComponente5();
         textomuda.setOnClickListener(new View.OnClickListener() {
             @Override
