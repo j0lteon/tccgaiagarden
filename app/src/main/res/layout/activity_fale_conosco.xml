@@ -106,86 +106,101 @@
         app:layout_constraintTop_toTopOf="parent"
 
         />
-    <EditText
-        android:id="@+id/nome"
-        style="@style/Edit_text"
-        android:hint="Nome:"
-        android:inputType="textPersonName"
 
-        android:layout_marginTop="210dp"
-        android:padding="15dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/email"
-        />
-
-    <EditText
-        android:id="@+id/email"
-        style="@style/Edit_text"
-        android:hint="E-mail:"
-        android:inputType="textEmailAddress"
-
-        android:layout_marginTop="30dp"
-        android:padding="15dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nome"
-        app:layout_constraintBottom_toTopOf="@id/telefone"
-        />
-
-    <EditText
-        android:id="@+id/telefone"
-        style="@style/Edit_text"
-        android:hint="Telefone:"
-        android:inputType="number"
-
-        android:layout_marginTop="30dp"
-        android:padding="15dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email"
-        />
-
-    <TextView
-        android:id="@+id/insira"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_nome"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Insira sua mensagem:"
 
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-
-        android:layout_marginRight="175dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="45dp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/telefone"
+        app:layout_constraintTop_toBottomOf="@id/preencha"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome:"
 
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-    <EditText
-        android:id="@+id/texto"
-        style="@style/Edit_text"
-
-        android:hint="Mensagem:"
-
-        android:inputType="textLongMessage"
-
-        android:padding="20dp"
-
-        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/insira"
-        />
+        app:layout_constraintTop_toBottomOf="@id/edit_nome"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail:"
+
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_tell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone:"
+
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_tell"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mensagem:"
+
+            android:padding="30dp"
+
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/entrar"
@@ -197,7 +212,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/texto"
+        app:layout_constraintTop_toBottomOf="@id/edit_mensagem"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
