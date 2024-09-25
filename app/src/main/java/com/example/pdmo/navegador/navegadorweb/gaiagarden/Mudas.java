@@ -18,7 +18,7 @@ public class Mudas extends AppCompatActivity {
 
     ImageView estrela;
 
-    ImageView imgfalecncs;
+    ImageView faleconosco;
 
     private TextView textomuda;
 
@@ -26,7 +26,7 @@ public class Mudas extends AppCompatActivity {
 
     private TextView meusfavoritos;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
 
     @Override
@@ -111,9 +111,9 @@ public class Mudas extends AppCompatActivity {
             }
         });
 
-        imgfalecncs = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecncs.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -122,10 +122,10 @@ public class Mudas extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Mudas.this, FaleConosco.class);
@@ -136,7 +136,7 @@ public class Mudas extends AppCompatActivity {
     }
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

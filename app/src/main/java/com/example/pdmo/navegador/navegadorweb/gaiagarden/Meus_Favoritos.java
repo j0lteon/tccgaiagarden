@@ -12,13 +12,13 @@ import android.widget.TextView;
 
 public class Meus_Favoritos extends AppCompatActivity {
 
-    AppCompatImageView imgfalecnsc;
+    AppCompatImageView faleconosco;
 
     ImageView home;
 
     ImageView gaiagardenlogo;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView hometexto;
 
@@ -38,9 +38,9 @@ public class Meus_Favoritos extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Meus_Favoritos.this, FaleConosco.class);
@@ -48,7 +48,7 @@ public class Meus_Favoritos extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
         faleconosco.setOnClickListener(new View.OnClickListener() {
@@ -94,7 +94,7 @@ public class Meus_Favoritos extends AppCompatActivity {
 
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

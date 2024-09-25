@@ -14,13 +14,13 @@ public class Descricao_Produto extends AppCompatActivity {
 
     AppCompatImageView estrela;
 
-    AppCompatImageView imgfalecnsc;
+    AppCompatImageView faleconosco;
 
     ImageView home;
 
     ImageView gaiagardenlogo;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView hometexto;
 
@@ -63,9 +63,9 @@ public class Descricao_Produto extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -74,10 +74,10 @@ public class Descricao_Produto extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Descricao_Produto.this, FaleConosco.class);
@@ -133,7 +133,7 @@ public class Descricao_Produto extends AppCompatActivity {
 
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

@@ -20,7 +20,7 @@ public class Flores extends AppCompatActivity {
 
     ImageView estrela;
 
-    ImageView imgfalecnsc;
+    ImageView faleconosco;
 
     private TextView voltartexto;
 
@@ -28,7 +28,7 @@ public class Flores extends AppCompatActivity {
 
     private TextView textoorquidea;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,9 +109,9 @@ public class Flores extends AppCompatActivity {
         });
 
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Flores.this, FaleConosco.class);
@@ -119,10 +119,10 @@ public class Flores extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Flores.this, FaleConosco.class);
@@ -133,7 +133,7 @@ public class Flores extends AppCompatActivity {
 
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

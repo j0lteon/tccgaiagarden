@@ -31,34 +31,51 @@
 
         />
 
-    <EditText
-        android:id="@+id/email"
-        style="@style/Edit_text"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
 
         app:layout_constraintStart_toStartOf="@id/container"
         app:layout_constraintEnd_toEndOf="@id/container"
         app:layout_constraintTop_toTopOf="@id/container"
-        app:layout_constraintBottom_toTopOf="@id/senha"
-        android:padding="20dp"
-        />
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail:"
 
-    <EditText
-        android:id="@+id/senha"
-        style="@style/Edit_text"
-        android:hint="Senha"
-        android:inputType="textPassword"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        android:drawableRight="@drawable/olhosenha"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        android:layout_marginBottom="40dp"
-        android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/container"
-        app:layout_constraintEnd_toEndOf="@id/container"
-        app:layout_constraintStart_toStartOf="@id/container"
-        app:layout_constraintTop_toBottomOf="@id/email"
-        />
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha:"
+
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/esqueceusenha"
@@ -70,9 +87,10 @@
         android:textColor="@color/titulo"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:layout_marginTop="10dp"
 
         app:layout_constraintBottom_toTopOf="@id/cadastrese"
-        app:layout_constraintTop_toBottomOf="@id/senha"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
         app:layout_constraintStart_toStartOf="@id/container"
         app:layout_constraintEnd_toEndOf="@id/container"
         />
@@ -83,6 +101,7 @@
         android:layout_height="wrap_content"
         android:text="Não tem conta? Inscreva-se"
 
+        android:layout_marginBottom="12dp"
 
         android:textColor="@color/titulo"
         android:textStyle="bold"

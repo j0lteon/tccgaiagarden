@@ -14,7 +14,7 @@ public class Categorias extends AppCompatActivity {
 
     AppCompatImageView estrela;
 
-    AppCompatImageView imgfalecnsc;
+    AppCompatImageView faleconosco;
 
     ImageView categoriacacto;
 
@@ -38,7 +38,7 @@ public class Categorias extends AppCompatActivity {
 
     private TextView meusfavoritos;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView hometexto;
 
@@ -101,9 +101,9 @@ public class Categorias extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(Categorias.this, FaleConosco.class);
@@ -111,7 +111,7 @@ public class Categorias extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes6();
 
         faleconosco.setOnClickListener(new View.OnClickListener() {
@@ -234,7 +234,7 @@ public class Categorias extends AppCompatActivity {
 
     private void IniciarComponentes6() {
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes7() {
