@@ -20,7 +20,7 @@ public class FaleConosco extends AppCompatActivity {
         setContentView(R.layout.activity_fale_conosco);
 
 
-        seta = findViewById(R.id.voltar);
+        seta = findViewById(R.id.seta);
 
         seta.setOnClickListener(new View.OnClickListener() {
             @Override
