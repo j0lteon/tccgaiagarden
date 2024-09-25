@@ -2,6 +2,7 @@ package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,11 +16,11 @@ public class DescricaoMudas extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    ImageView imgfalecnsc;
+    ImageView faleconosco;
 
     ImageView home;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView hometexto;
 
@@ -28,6 +29,7 @@ public class DescricaoMudas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_descricao_mudas);
 
         gaiagardenlogo = findViewById(R.id.logo1);
 
@@ -61,9 +63,9 @@ public class DescricaoMudas extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -72,10 +74,10 @@ public class DescricaoMudas extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(DescricaoMudas.this, FaleConosco.class);
@@ -104,7 +106,7 @@ public class DescricaoMudas extends AppCompatActivity {
                 startActivity(it);
             }
         });
-/*
+
         Button addfav = findViewById(R.id.addfav);
 
         addfav.setOnClickListener(new View.OnClickListener() {
@@ -114,13 +116,13 @@ public class DescricaoMudas extends AppCompatActivity {
                 startActivity(it);
 
             }
-        }); */
+        });
 
 
     }
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

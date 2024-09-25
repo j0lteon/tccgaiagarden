@@ -16,12 +16,12 @@ public class DescricaoFlores extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    AppCompatImageView imgfalecnsc;
+    AppCompatImageView faleconosco;
 
     ImageView home;
 
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView hometexto;
 
@@ -54,9 +54,9 @@ public class DescricaoFlores extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(DescricaoFlores.this, FaleConosco.class);
@@ -64,7 +64,7 @@ public class DescricaoFlores extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
         faleconosco.setOnClickListener(new View.OnClickListener() {
@@ -122,7 +122,7 @@ public class DescricaoFlores extends AppCompatActivity {
     }
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

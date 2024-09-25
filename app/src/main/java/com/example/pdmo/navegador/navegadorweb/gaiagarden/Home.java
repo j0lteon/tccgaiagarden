@@ -12,7 +12,7 @@ public class Home extends AppCompatActivity {
 
     AppCompatImageView estrela;
 
-    AppCompatImageView imgfalecnsc;
+    AppCompatImageView faleconosco;
 
     AppCompatImageView menu_home;
 
@@ -28,7 +28,7 @@ public class Home extends AppCompatActivity {
 
     private  TextView meusfavoritos;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView textoorquidea;
 
@@ -67,9 +67,9 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, FaleConosco.class);
@@ -77,7 +77,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes3();
         faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -208,7 +208,7 @@ public class Home extends AppCompatActivity {
 
     private void IniciarComponentes3() {
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes4() {

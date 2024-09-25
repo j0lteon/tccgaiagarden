@@ -19,9 +19,9 @@ public class Cactos extends AppCompatActivity {
 
     ImageView estrela;
 
-    AppCompatImageView imgfalecnsc;
+    AppCompatImageView faleconosco;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView textocacto2;
 
@@ -111,9 +111,9 @@ public class Cactos extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -123,10 +123,10 @@ public class Cactos extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Cactos.this, FaleConosco.class);
@@ -139,7 +139,7 @@ public class Cactos extends AppCompatActivity {
 
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

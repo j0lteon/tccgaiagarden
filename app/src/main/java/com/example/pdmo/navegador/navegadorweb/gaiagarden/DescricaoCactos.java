@@ -16,11 +16,11 @@ public class DescricaoCactos extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    AppCompatImageView imgfalecnsc;
+    AppCompatImageView faleconosco;
 
     ImageView home;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     private TextView hometexto;
 
@@ -64,9 +64,9 @@ public class DescricaoCactos extends AppCompatActivity {
             }
         });
 
-        imgfalecnsc = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecnsc.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -75,10 +75,10 @@ public class DescricaoCactos extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes();
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(DescricaoCactos.this, FaleConosco.class);
@@ -133,7 +133,7 @@ public class DescricaoCactos extends AppCompatActivity {
      }
     private void IniciarComponentes(){
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 
     private void IniciarComponentes2(){

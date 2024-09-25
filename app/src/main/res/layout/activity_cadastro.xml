@@ -28,7 +28,7 @@
         android:id="@+id/voltar"
         android:layout_width="84dp"
         android:layout_height="25dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="284dp"
         android:text="@string/voltar"
@@ -48,7 +48,8 @@
         android:layout_width="30dp"
         android:layout_height="25dp"
         android:layout_marginTop="13dp"
-        android:src="@drawable/baseline_keyboard_backspace_24"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/seta"
 
         app:layout_constraintStart_toStartOf="@id/view"
         app:layout_constraintTop_toTopOf="@id/view"
@@ -88,78 +89,126 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Cadastrar" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_email"
-        style="@style/Edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="20dp"
 
-        android:hint="Digite seu E-mail"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="@id/preencha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/preencha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/edit_tell"
-        />
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail:"
 
-    <EditText
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_tell"
-        style="@style/Edit_text"
-        android:hint="Digite seu Nome"
-        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        app:layout_constraintStart_toStartOf="@id/edit_email"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_email"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_datanasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/edit_DataNasc"
-        android:layout_marginTop="30dp"
-        />
-
-    <EditText
-        android:id="@+id/edit_DataNasc"
-        style="@style/Edit_text"
-        android:layout_marginTop="30dp"
-        android:hint="Digite sua Data de Nascimento"
-
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="@id/edit_tell"
         app:layout_constraintTop_toBottomOf="@id/edit_tell"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data de Nascimento:"
+
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/edit_Senha"/>
+        app:layout_constraintTop_toBottomOf="@id/edit_datanasc"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha:"
 
-    <EditText
-        android:id="@+id/edit_Senha"
-        style="@style/Edit_text"
-        android:drawableRight="@drawable/olhosenha"
-        android:hint="Digite sua Senha"
-        android:inputType="number"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        app:layout_constraintStart_toStartOf="@id/edit_DataNasc"
-        app:layout_constraintTop_toBottomOf="@id/edit_DataNasc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/view4"
-        android:layout_marginTop="30dp"
-        />
-
-
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_confsenha"
-        style="@style/Edit_text"
-        android:drawableRight="@drawable/olhosenha"
-        android:hint="@string/confirme_sua_senha"
-        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        app:layout_constraintStart_toStartOf="@id/view4"
-        app:layout_constraintTop_toBottomOf="@id/view4"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cadastrar"
-        android:layout_marginTop="30dp"
-        />
+        app:layout_constraintTop_toBottomOf="@id/view4"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirme sua senha:"
+
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <View
         android:id="@+id/view4"
         android:layout_width="0dp"
         android:layout_height="2dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:background="@color/cinza"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
@@ -167,7 +216,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/edit_Senha"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
         app:layout_constraintBottom_toTopOf="@id/edit_confsenha"
         />
 

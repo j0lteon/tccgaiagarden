@@ -20,7 +20,7 @@ public class Folhagens extends AppCompatActivity {
 
     ImageView estrela;
 
-    AppCompatImageView imgfalecncs;
+    AppCompatImageView faleconosco;
 
     private TextView voltartexto;
 
@@ -28,7 +28,7 @@ public class Folhagens extends AppCompatActivity {
 
     private TextView textoespada;
 
-    private TextView faleconosco;
+    private TextView textofaleconosco;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,9 +100,9 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
-        imgfalecncs = findViewById(R.id.imgfalecnsc);
+        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        imgfalecncs.setOnClickListener(new View.OnClickListener() {
+        faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -111,9 +111,9 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
         IniciarComponentes4();
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Folhagens.this, FaleConosco.class);
@@ -151,6 +151,6 @@ public class Folhagens extends AppCompatActivity {
 
     private void IniciarComponentes4() {
 
-        faleconosco = findViewById(R.id.faleconosco);
+        textofaleconosco = findViewById(R.id.faleconosco);
     }
 }
