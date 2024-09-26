@@ -1,15 +1,18 @@
 package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
+import android.content.Context;
 import android.os.StrictMode;
+import android.widget.Toast;
 
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Conexao {
 
-    public static Connection conectar() {
+    public static Connection conectar(Context ctx) {
         Connection conn = null;
 
         try {
@@ -19,13 +22,16 @@ public class Conexao {
 
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
-            conn = DriverManager.getConnection("jdbc::jtds:sqlserver://192.168.56.1" +
+            conn = DriverManager.getConnection("jdbc::jtds:sqlserver://172.19.1.62" +
                     "databaseName=bd_gaiagarden;user=sa;password=@ITB123456;");
         } catch (SQLException e){
-            e.getMessage();
+            Toast.makeText(ctx, "SERVIDOR" +
+                    "INIDPONÍVEL", Toast.LENGTH_LONG). show();
         } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         return conn;
     }
+
+
 }
