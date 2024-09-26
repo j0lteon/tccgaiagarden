@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+
 public class Home extends AppCompatActivity {
 
     AppCompatImageView estrela;
@@ -200,6 +201,8 @@ public class Home extends AppCompatActivity {
 
         categorias = findViewById(R.id.categorias);
     }
+
+
 
     private void IniciarComponentes2() {
 
