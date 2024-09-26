@@ -1,6 +1,7 @@
 package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatEditText;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
