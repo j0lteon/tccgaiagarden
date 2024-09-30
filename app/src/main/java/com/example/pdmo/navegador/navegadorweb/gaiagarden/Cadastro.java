@@ -45,7 +45,14 @@ public class Cadastro extends AppCompatActivity {
         btnInserir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                inserirUsuario();
+
+                Usuario user = new Usuario(
+                        edit_nome.getText().toString(),
+                        edit_email.getText().toString(),
+                        edit_senha.getText().toString(),
+                        edit_tell.getText().toString(),
+
+                );
             }
         });
 
@@ -78,62 +85,7 @@ public class Cadastro extends AppCompatActivity {
         voltar = findViewById(R.id.voltar);
     }
 
-    private void inserirUsuario(){
-        try {
-            PreparedStatement pst =
-        .prepareStatement("Inserir INTO Usuario (nome, email, senha, nivelAcesso, telefone, dataCadastro, statusUsuario) values (?,?,?,?,?,?,?)");
-            String nome = edit_nome.getText().toString();
-            String email = edit_email.getText().toString();
-            String senha = edit_senha.getText().toString();
-            String nivelAcesso = "USER_APP";
-            String telefone = edit_tell.getText().toString();
-            String dataCadastro = LocalDate.now().toString();
-            String statusUsuario = "ATIVO";
 
-            if(nome.isEmpty() || nome.equals("")){
-                Toast.makeText(getApplicationContext(), "Insira um nome",
-                        Toast.LENGTH_SHORT).show();
-                edit_nome.setFocusable(true);
-            }else{
-                pst.setString(1,nome);
-            }
-
-            if (email.isEmpty() || email.equals("")){
-                Toast.makeText(getApplicationContext(), "insira um email",
-                Toast.LENGTH_SHORT).show();
-                edit_email.setFocusable(true);
-            }else{
-                pst.setString(2,email);
-            }
-
-            if (senha.isEmpty() || senha.equals("")){
-                Toast.makeText(getApplicationContext(), "insira uma senha",
-                        Toast.LENGTH_SHORT).show();
-                edit_senha.setFocusable(true);
-            }else{
-                pst.setString(3,senha);
-            }
-
-            if (telefone.isEmpty() || telefone.equals("")){
-                Toast.makeText(getApplicationContext(), "insira um telefone",
-                        Toast.LENGTH_SHORT).show();
-                edit_tell.setFocusable(true);
-            }else{
-                pst.setString(5,telefone);
-            }
-
-            pst.setString(4,nivelAcesso);
-            pst.setString(6,dataCadastro);
-            pst.setString(7,statusUsuario);
-
-            pst.executeUpdate();
-            Toast.makeText(getApplicationContext(), "USUÁRIO INSERIDO COM SUCESSO!",
-                    Toast.LENGTH_SHORT).show();
-
-        } catch (SQLException e) {
-            Toast.makeText(getApplicationContext(), e.getMessage(),
-                    Toast.LENGTH_SHORT).show();
-        }
     }
 
 }
