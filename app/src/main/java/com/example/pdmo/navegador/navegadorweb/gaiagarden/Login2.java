@@ -13,14 +13,11 @@ public class Login2 extends AppCompatActivity {
 
 
 
-
     private TextView cadastrese;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
-
-
 
         cadastrese = findViewById(R.id.cadastrese);
         IniciarComponentes();
