@@ -2,6 +2,7 @@ package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
 import android.content.Context;
 import android.os.StrictMode;
+import android.widget.Toast;
 
 
 import java.sql.Connection;
@@ -20,11 +21,11 @@ public class Conexao {
 
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
-            conn = DriverManager.getConnection("jdbc::jtds:sqlserver://172.19.1.226" +
+            conn = DriverManager.getConnection("jdbc::jtds:sqlserver://172.19.1.135" +
                     "databaseName=bd_gaiagarden;user=sa;password=@ITB123456;");
 
         } catch (SQLException e){
-            e.getMessage();
+            Toast.makeText(ctx, "SERVIDOR" + "INDISPONÍVEL", Toast.LENGTH_SHORT).show();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

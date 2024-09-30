@@ -4,6 +4,7 @@ import android.content.Context;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -17,7 +18,7 @@ public class UsuarioDao {
 
         try {
             PreparedStatement pst = Conexao.conectar(ctx).prepareStatement(
-                    "Insert Into Usuario values(?,?,?,?,?,?,?)"
+                    "Insert Into Usuario (nome, email, senha, nivelAcesso, telefone, dataCadastro, statusUsuario) " + "values(?,?,?,?,?,?,?)"
             );
 
             pst.setString(1, usuario.getNome());
@@ -25,7 +26,8 @@ public class UsuarioDao {
             pst.setString(3, usuario.getSenha());
             pst.setString(5, usuario.getTelefone());
             pst.setString(4, usuario.getNivelAcesso());
-            pst.setLocalDate
+            pst.setDate(6, Date.valueOf(usuario.getDataCadastro().toString()));
+            pst.setString(7, usuario.getStatusUsuario());
 
 
             resposta = pst.executeUpdate();

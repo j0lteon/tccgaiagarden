@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.sql.Connection;
@@ -50,9 +51,17 @@ public class Cadastro extends AppCompatActivity {
                         edit_nome.getText().toString(),
                         edit_email.getText().toString(),
                         edit_senha.getText().toString(),
+                        "USER_APP",
                         edit_tell.getText().toString(),
-
+                        LocalDate.now(),
+                        "ATIVO"
                 );
+
+                int res = UsuarioDao.inserirUsuario(user, getBaseContext());
+                if (res <= 0) {
+                    Snackbar.make(btnInserir, "Inserção não realizada!", Snackbar.LENGTH_LONG).show();
+                }
+
             }
         });
 
@@ -86,6 +95,6 @@ public class Cadastro extends AppCompatActivity {
     }
 
 
-    }
+
 
 }

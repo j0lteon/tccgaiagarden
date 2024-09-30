@@ -19,6 +19,16 @@ public class Login2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
 
+        Button button = findViewById(R.id.entrar);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Login2.this, Home.class);
+                startActivity(it);
+            }
+        });
+
         cadastrese = findViewById(R.id.cadastrese);
         IniciarComponentes();
 
