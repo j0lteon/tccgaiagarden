@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -33,6 +34,7 @@ public class Cadastro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
+
 
         edit_nome = (EditText) findViewById(R.id.edit_nome);
         edit_tell = (EditText) findViewById(R.id.edit_tell);
@@ -79,7 +81,7 @@ public class Cadastro extends AppCompatActivity {
     private void inserirUsuario(){
         try {
             PreparedStatement pst =
-                    Conexao.conectar(getBaseContext()).prepareStatement("Inserir INTO Usuario (nome, email, senha, nivelAcesso, telefone, dataCadastro, statusUsuario) values (?,?,?,?,?,?,?)");
+        .prepareStatement("Inserir INTO Usuario (nome, email, senha, nivelAcesso, telefone, dataCadastro, statusUsuario) values (?,?,?,?,?,?,?)");
             String nome = edit_nome.getText().toString();
             String email = edit_email.getText().toString();
             String senha = edit_senha.getText().toString();
