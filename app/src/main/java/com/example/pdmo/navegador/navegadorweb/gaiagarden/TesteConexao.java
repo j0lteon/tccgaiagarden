@@ -2,10 +2,14 @@ package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public class TesteConexao extends AppCompatActivity {
 
@@ -29,11 +33,23 @@ public class TesteConexao extends AppCompatActivity {
             }else{
                 BancoTeste.setText("Conexão nula, não realizada");
             }
-        } catch (java.sql.SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            BancoTeste.setText("Conexão falhou\n" +
+            BancoTeste.setText("Conexão falhou" +
                     e.getMessage());
         }
+
+        Button button = findViewById(R.id.entrar);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(TesteConexao.this, Cadastro.class);
+                startActivity(it);
+            }
+        });
+
+
 
     }
 }
