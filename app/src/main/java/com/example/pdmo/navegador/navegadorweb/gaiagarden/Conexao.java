@@ -21,8 +21,8 @@ public class Conexao {
 
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
-            conn = DriverManager.getConnection("jdbc::jtds:sqlserver://172.19.1.135" +
-                    "databaseName=bd_gaiagarden;user=sa;password=@ITB123456;");
+            conn = DriverManager.getConnection("jdbc:jtds:sqlserver://172.19.0.64;" +
+                    "databaseName=Banco_Android;user=sa;password=@ITB123456;");
 
         } catch (SQLException e){
             Toast.makeText(ctx, "SERVIDOR" + "INDISPONÍVEL", Toast.LENGTH_SHORT).show();
