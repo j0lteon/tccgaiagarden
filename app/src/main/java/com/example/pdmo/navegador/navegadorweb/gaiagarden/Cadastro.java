@@ -55,11 +55,16 @@ public class Cadastro extends AppCompatActivity {
                         edit_tell.getText().toString(),
                         LocalDate.now(),
                         "ATIVO"
+
                 );
 
                 int res = UsuarioDao.inserirUsuario(user, getBaseContext());
                 if (res <= 0) {
                     Snackbar.make(btnInserir, "Inserção não realizada!", Snackbar.LENGTH_LONG).show();
+                }
+                else{
+                    Intent it = new Intent(Cadastro.this, Home.class);
+                    startActivity(it);
                 }
 
             }
