@@ -107,103 +107,81 @@
 
         />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/edit_nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="45dp"
+        android:padding="25dp"
+
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+
+        android:layout_marginTop="30dp"
+
+        android:hint="Nome:"
+        android:inputType="textEmailAddress"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/preencha"
-        >
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nome:"
+        />
 
-            android:textStyle="bold"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/edit_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:padding="25dp"
+
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+
         android:layout_marginTop="30dp"
+
+        android:hint="E-mail:"
+        android:inputType="textEmailAddress"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_nome"
-        >
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="E-mail:"
+        />
 
-            android:textStyle="bold"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/edit_tell"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:padding="25dp"
+
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+
         android:layout_marginTop="30dp"
+
+        android:hint="Telefone:"
+        android:inputType="textEmailAddress"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_email"
-        >
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Telefone:"
+        />
 
-            android:textStyle="bold"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/edit_mensagem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="35dp"
+        android:padding="35dp"
+
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+
+        android:layout_marginTop="30dp"
+
+        android:hint="Mensagem:"
+        android:inputType="textEmailAddress"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_tell"
-        >
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Mensagem:"
-
-            android:padding="30dp"
-
-            android:textStyle="bold"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+        />
 
 
     <Button
-        android:id="@+id/entrar"
+        android:id="@+id/enviar"
         style="@style/Button"
         android:backgroundTint="@color/verde"
         android:text="Enviar"

@@ -35,8 +35,7 @@ public class TesteConexao extends AppCompatActivity {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            BancoTeste.setText("Conexão falhou" +
-                    e.getMessage());
+            BancoTeste.setText("Conexão falhou!!!\n" + e.getMessage());
         }
 
         Button button = findViewById(R.id.entrar);
