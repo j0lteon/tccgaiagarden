@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,6 +18,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Home3"
+            android:exported="false" />
+        <activity
+            android:name=".Home2"
+            android:exported="false" />
+        <activity
             android:name=".TesteConexao"
             android:exported="true">
             <intent-filter>
@@ -27,8 +35,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".FaleConosco"
             android:exported="true" />
@@ -49,8 +55,7 @@
             android:exported="true" />
         <activity
             android:name=".Login2"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -75,6 +80,10 @@
         <activity
             android:name=".DescricaoMudas"
             android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

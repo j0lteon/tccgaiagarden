@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_cactos"
+            android:title="Cactos" />
+
+        <item
+            android:id="@+id/nav_flores"
+            android:title="Flores" />
+
+        <item
+            android:id="@+id/nav_folhagens"
+            android:title="Folhagens" />
+
+        <item
+            android:id="@+id/nav_mudas"
+            android:title="Mudas" />
+
+        <item
+            android:id="@+id/faleconosco"
+            android:icon="@drawable/faleconosco"
+            android:title="Fale Conosco" />
+
+
+    </group>
+
+    <item android:title="Perfil">
+        <menu>
+            <group android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/nav_perfil"
+                    android:icon="@drawable/perfil"
+                    android:title="Acessar perfil" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Sair" />
+
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

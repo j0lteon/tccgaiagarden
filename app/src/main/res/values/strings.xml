@@ -17,4 +17,7 @@
     <string name="in_cio">Início</string>
     <string name="meus_favoritos">Meus favoritos</string>
     <string name="adicionar_aos_meus_favoritos">Adicionar aos meus favoritos</string>
+
+    <string name="navigation_drawer_open">Abra a barra de navegação</string>
+    <string name="navigation_drawer_close">Feche a barra de navegação</string>
 </resources>
