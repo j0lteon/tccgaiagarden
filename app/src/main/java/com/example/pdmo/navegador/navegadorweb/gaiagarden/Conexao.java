@@ -21,7 +21,7 @@ public class Conexao {
 
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
-            conn = DriverManager.getConnection("jdbc:jtds:sqlserver://172.19.1.64;" +
+            conn = DriverManager.getConnection("jdbc:jtds:sqlserver://172.19.1.62;" +
                     "databaseName=bd_gaiagarden;user=sa;password=@ITB123456;");
 
         } catch (SQLException e){

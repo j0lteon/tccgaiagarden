@@ -21,6 +21,18 @@
 
         />
 
+    <TextView
+        android:id="@+id/teste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Texto"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/container"
+        />
     <View
         android:id="@+id/container"
         style="@style/ContainerComponents"
@@ -31,51 +43,40 @@
 
         />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/edit_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="35dp"
+        style="@style/Edit_text"
+
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text"
+
+        android:hint="E-mail:"
+
+        android:inputType="textEmailAddress"
+        android:padding="25dp"
+
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+
+        android:padding="25dp"
+
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+
+        android:layout_marginTop="30dp"
+
+        android:hint="Senha:"
+        android:inputType="textEmailAddress"
 
         app:layout_constraintStart_toStartOf="@id/container"
         app:layout_constraintEnd_toEndOf="@id/container"
-        app:layout_constraintTop_toTopOf="@id/container"
-        >
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="E-mail:"
-
-            android:textStyle="bold"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edit_senha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_email"
-        >
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Senha:"
-
-            android:textStyle="bold"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+        />
 
     <TextView
         android:id="@+id/esqueceusenha"
