@@ -21,18 +21,6 @@
 
         />
 
-    <TextView
-        android:id="@+id/teste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="Texto"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/container"
-        />
     <View
         android:id="@+id/container"
         style="@style/ContainerComponents"
@@ -46,19 +34,20 @@
     <EditText
         android:id="@+id/edit_email"
 
-        style="@style/Edit_text"
-
-        android:layout_marginTop="32dp"
-        android:background="@drawable/edit_text"
-
-        android:hint="E-mail:"
-
-        android:inputType="textEmailAddress"
         android:padding="25dp"
 
-        app:layout_constraintEnd_toEndOf="@id/container"
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+
+        android:layout_marginTop="30dp"
+
+        android:hint="E-mail:"
+        android:inputType="textEmailAddress"
+
         app:layout_constraintStart_toStartOf="@id/container"
-        app:layout_constraintTop_toTopOf="@id/container" />
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        />
 
     <EditText
         android:id="@+id/edit_senha"
@@ -70,7 +59,7 @@
 
         android:layout_marginTop="30dp"
 
-        android:hint="Senha:"
+        android:hint="E-mail:"
         android:inputType="textEmailAddress"
 
         app:layout_constraintStart_toStartOf="@id/container"
