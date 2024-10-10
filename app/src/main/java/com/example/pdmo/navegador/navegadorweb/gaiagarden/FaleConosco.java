@@ -60,25 +60,20 @@ public class FaleConosco extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                     edit_nome.setFocusable(true);
 
-                }
-
-                else if (email.isEmpty() || email.equals("") || !isEmailValido(email)) {
+                } else if (email.isEmpty() || email.equals("") || !isEmailValido(email)) {
                     Toast.makeText(getApplicationContext(), "INSIRA UM EMAIL VÁLIDO",
                             Toast.LENGTH_SHORT).show();
                     edit_email.setFocusable(true);
-                }
-                else if (telefone.isEmpty() || telefone.equals("") || !isTelefoneValido(telefone)) {
+                } else if (telefone.isEmpty() || telefone.equals("") || !isTelefoneValido(telefone)) {
                     Toast.makeText(getApplicationContext(), "INSIRA UM TELEFONE VÁLIDO",
                             Toast.LENGTH_SHORT).show();
                     edit_tell.setFocusable(true);
-                }else if (texto.isEmpty() || texto.equals("")) {
+                } else if (texto.isEmpty() || texto.equals("")) {
                     Toast.makeText(getApplicationContext(), "INSIRA UMA MENSAGEM",
                             Toast.LENGTH_SHORT).show();
                     edit_mensagem.setFocusable(true);
 
-                }
-
-                else {
+                } else {
                     Mensagem men = new Mensagem(
                             LocalDate.now(),
                             emissor,
@@ -103,18 +98,20 @@ public class FaleConosco extends AppCompatActivity {
         });
 
     }
-    public boolean isEmailValido(String email){
-        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+
+    public boolean isEmailValido(String email) {
+        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             return true;
         }
         return false;
     }
-    public boolean isTelefoneValido(String telefone){
 
-        if (telefone.length()<8){
+    public boolean isTelefoneValido(String telefone) {
+
+        if (telefone.length() < 8) {
             Snackbar.make(btnInserir, "O telefone deve conter no mínimo 8 caracteres", Snackbar.LENGTH_LONG).show();
         } else {
-            if (Patterns.PHONE.matcher(telefone).matches()){
+            if (Patterns.PHONE.matcher(telefone).matches()) {
                 return true;
             }
         }

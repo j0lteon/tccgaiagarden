@@ -20,4 +20,8 @@
 
     <string name="navigation_drawer_open">Abra a barra de navegação</string>
     <string name="navigation_drawer_close">Feche a barra de navegação</string>
+    <string name="title_activity_produto_content_detail_host">ProdutoContentDetailHostActivity
+    </string>
+    <string name="title_produtocontent_list">Items</string>
+    <string name="title_produtocontent_detail">ProdutoContent Detail</string>
 </resources>

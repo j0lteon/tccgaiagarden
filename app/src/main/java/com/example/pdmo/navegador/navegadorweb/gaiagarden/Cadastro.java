@@ -58,30 +58,24 @@ public class Cadastro extends AppCompatActivity {
                 String telefone = edit_tell.getText().toString();
 
 
-
                 if (nome.isEmpty() || nome.equals("")) {
                     Toast.makeText(getApplicationContext(), "INSIRA UM NOME",
                             Toast.LENGTH_SHORT).show();
                     edit_nome.setFocusable(true);
 
-                }
-                else if (email.isEmpty() || email.equals("") || !isEmailValido(email)) {
+                } else if (email.isEmpty() || email.equals("") || !isEmailValido(email)) {
                     Toast.makeText(getApplicationContext(), "INSIRA UM EMAIL VÁLIDO",
                             Toast.LENGTH_SHORT).show();
                     edit_email.setFocusable(true);
-                }
-                else if (senha.isEmpty() || senha.equals("") || !isSenhaValida(senha))  {
+                } else if (senha.isEmpty() || senha.equals("") || !isSenhaValida(senha)) {
                     Toast.makeText(getApplicationContext(), "INSIRA UMA SENHA",
                             Toast.LENGTH_SHORT).show();
                     edit_senha.setFocusable(true);
-                }
-                else if (telefone.isEmpty() || telefone.equals("") || !isTelefoneValido(telefone)) {
+                } else if (telefone.isEmpty() || telefone.equals("") || !isTelefoneValido(telefone)) {
                     Toast.makeText(getApplicationContext(), "INSIRA UM TELEFONE VÁLIDO",
                             Toast.LENGTH_SHORT).show();
                     edit_tell.setFocusable(true);
-                }
-
-                else {
+                } else {
                     Usuario user = new Usuario(
                             nome,
                             email,
@@ -98,7 +92,7 @@ public class Cadastro extends AppCompatActivity {
                         Snackbar.make(btnInserir, "Inserção não realizada!", Snackbar.LENGTH_LONG).show();
                     } else {
                         Snackbar.make(btnInserir, "Inserção realizada com sucesso!", Snackbar.LENGTH_LONG).show();
-                        Intent it = new Intent(Cadastro.this, Home.class);
+                        Intent it = new Intent(Cadastro.this, Login2.class);
                         startActivity(it);
                     }
 
@@ -134,25 +128,27 @@ public class Cadastro extends AppCompatActivity {
 
     }
 
-    public boolean isEmailValido(String email){
-        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+    public boolean isEmailValido(String email) {
+        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             return true;
         }
         return false;
     }
-    public boolean isSenhaValida(String senha){
-        if (senha.length()<6){
+
+    public boolean isSenhaValida(String senha) {
+        if (senha.length() < 6) {
             Snackbar.make(btnInserir, "Senha deve conter no mínimo 6 caracteres", Snackbar.LENGTH_LONG).show();
             return false;
         }
         return true;
     }
-    public boolean isTelefoneValido(String telefone){
 
-         if (telefone.length()<8){
+    public boolean isTelefoneValido(String telefone) {
+
+        if (telefone.length() < 8) {
             Snackbar.make(btnInserir, "O telefone deve conter no mínimo 8 caracteres", Snackbar.LENGTH_LONG).show();
         } else {
-            if (Patterns.PHONE.matcher(telefone).matches()){
+            if (Patterns.PHONE.matcher(telefone).matches()) {
                 return true;
             }
         }

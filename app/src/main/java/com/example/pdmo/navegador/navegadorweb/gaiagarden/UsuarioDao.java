@@ -30,7 +30,6 @@ public class UsuarioDao {
             pst.setString(7, usuario.getStatusUsuario());
 
 
-
             resposta = pst.executeUpdate();
 
 

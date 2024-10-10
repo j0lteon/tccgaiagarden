@@ -10,4 +10,10 @@
     </style>
 
     <style name="Theme.GaiaGarden" parent="Base.Theme.GaiaGarden" />
+    <style name="Theme.GaiaGarden.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.GaiaGarden.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.GaiaGarden.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

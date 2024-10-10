@@ -18,6 +18,7 @@ public class Login2 extends AppCompatActivity {
     private int nivel = 9;
 
     TextView cadastrese;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +35,10 @@ public class Login2 extends AppCompatActivity {
                         senha.getText().toString(),
                         getBaseContext()
                 );
-                if(objL != null){
+                if (objL != null) {
                     Intent it = new Intent(getBaseContext(), Home.class);
                     startActivity(it);
-                }else {
+                } else {
                     Toast.makeText(getApplicationContext(), "E-mail ou senha inválidos!", Toast.LENGTH_LONG).show();
                 }
             }
