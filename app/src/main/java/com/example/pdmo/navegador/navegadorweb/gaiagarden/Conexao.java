@@ -23,12 +23,12 @@ public class Conexao {
 
             Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
 
-            conn = DriverManager.getConnection("jdbc:jtds:sqlserver://172.19.1.171;" +
+            conn = DriverManager.getConnection("jdbc:jtds:sqlserver://172.19.1.228;" +
                     "databaseName=bd_gaiagarden;user=sa;password=@ITB123456;");
 
-        } catch (SQLException e){
+        } catch (SQLException e) {
             Toast.makeText(ctx, "SERVIDOR" + "INDISPONÍVEL", Toast.LENGTH_SHORT).show();
-        }   catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
@@ -38,7 +38,7 @@ public class Conexao {
         return conn;
     }
 
-    public static Login pesquisarLogin(String email, String senha, Context ctx){
+    public static Login pesquisarLogin(String email, String senha, Context ctx) {
 
         try {
             PreparedStatement pst = conectar(ctx).prepareStatement(
@@ -47,7 +47,7 @@ public class Conexao {
             pst.setString(2, senha);
             ResultSet res = pst.executeQuery();
 
-            while (res.next()){
+            while (res.next()) {
                 Login objLogin = new Login();
                 objLogin.setEmail(res.getString(3));
                 objLogin.setSenha(res.getString(4));
