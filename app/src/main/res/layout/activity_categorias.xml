@@ -73,7 +73,8 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
 
-        android:layout_marginLeft="65dp"
+
+        android:layout_marginLeft="60dp"
 
         app:layout_constraintStart_toEndOf="@id/hometexto"
         app:layout_constraintTop_toTopOf="@id/barra"
@@ -90,11 +91,12 @@
         android:textColor="@color/white"
         android:textStyle="bold"
 
-        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
 
-        app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintStart_toEndOf="@id/estrela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
         />
 
     <ImageView
@@ -185,17 +187,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Folhagem"
+        android:text="Folhagens"
         android:textStyle="bold"
         android:textColor="@color/texto"
         android:textAlignment="center"
         android:textSize="18sp"
 
-        android:layout_marginLeft="35dp"
+        android:layout_marginLeft="65dp"
         android:layout_marginTop="5dp"
 
         app:layout_constraintTop_toBottomOf="@id/categoriafolhagens"
-        app:layout_constraintStart_toStartOf="@id/hometexto"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
     <ImageView
@@ -240,6 +242,9 @@
         android:layout_marginTop="30dp"
         android:background="@color/verde"
 
+
+
+        app:layout_constraintTop_toBottomOf="@id/folhagens"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

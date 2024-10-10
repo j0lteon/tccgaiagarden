@@ -8,29 +8,43 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login2 extends AppCompatActivity {
 
+    private EditText email, senha;
+    private Button btnLogar;
+    private String usu, sen;
+    private int nivel = 9;
 
+    TextView cadastrese;
 
-    private TextView cadastrese;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
 
-        Button button = findViewById(R.id.entrar);
+        inicializarComponentes();
 
-        button.setOnClickListener(new View.OnClickListener() {
+        btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent it = new Intent(Login2.this, Home.class);
-                startActivity(it);
+            public void onClick(View view) {
+
+                Login objL = Conexao.pesquisarLogin(
+                        email.getText().toString(),
+                        senha.getText().toString(),
+                        getBaseContext()
+                );
+                if (objL != null) {
+                    Intent it = new Intent(getBaseContext(), Home.class);
+                    startActivity(it);
+                } else {
+                    Toast.makeText(getApplicationContext(), "E-mail ou senha inválidos!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         cadastrese = findViewById(R.id.cadastrese);
-        IniciarComponentes();
 
         cadastrese.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,8 +55,10 @@ public class Login2 extends AppCompatActivity {
         });
     }
 
-    private void IniciarComponentes() {
-
-        cadastrese = findViewById(R.id.cadastrese);
+    private void inicializarComponentes() {
+        email = findViewById(R.id.edit_email);
+        senha = findViewById(R.id.edit_senha);
+        btnLogar = findViewById(R.id.entrar);
     }
+
 }

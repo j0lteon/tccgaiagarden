@@ -27,7 +27,7 @@ public class Home extends AppCompatActivity {
 
     private TextView categorias;
 
-    private  TextView meusfavoritos;
+    private TextView meusfavoritos;
 
     private TextView textofaleconosco;
 
@@ -197,11 +197,10 @@ public class Home extends AppCompatActivity {
 
     }
 
-    private void IniciarComponentes(){
+    private void IniciarComponentes() {
 
         categorias = findViewById(R.id.categorias);
     }
-
 
 
     private void IniciarComponentes2() {

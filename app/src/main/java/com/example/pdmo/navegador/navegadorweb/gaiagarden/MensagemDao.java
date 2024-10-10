@@ -10,7 +10,7 @@ public class MensagemDao {
 
     public static int inserirMensagem(Mensagem mensagem, Context ctx){
 
-        int resposta = 0;
+        int answer = 0;
 
         try {
             PreparedStatement pst = Conexao.conectar(ctx).prepareStatement(
@@ -25,12 +25,12 @@ public class MensagemDao {
             pst.setString(5, mensagem.getTexto());
             pst.setString(6, mensagem.getStatusMensagem());
 
-            resposta = pst.executeUpdate();
+            answer = pst.executeUpdate();
 
         } catch (Exception e) {
             e.getMessage();
         }
-        return resposta;
+        return answer;
 
     }
 
