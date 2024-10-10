@@ -296,54 +296,10 @@
         app:layout_constraintTop_toBottomOf="@id/textoespada"
         />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/cacto"
 
-        android:src="@drawable/cacto"
 
-        android:layout_width="100dp"
-        android:layout_height="100dp"
 
-        android:layout_marginTop="50dp"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/espadadesaojorge"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textocacto"
-        />
-
-    <TextView
-        android:id="@+id/textocacto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="Cacto"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:textSize="15sp"
-        android:layout_marginBottom="60dp"
-
-        app:layout_constraintTop_toBottomOf="@id/cacto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/precocacto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 6,50"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textocacto"
-        />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/muda"
@@ -400,7 +356,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/florroxa"
+        android:src="@drawable/cacto2"
 
         android:layout_marginRight="253dp"
         android:layout_marginTop="50dp"
@@ -415,15 +371,16 @@
         android:id="@+id/textoflorroxa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Flor Roxa"
+        android:text="Cacto Orelha de Coelho"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
         android:layout_marginBottom="60dp"
         android:layout_marginRight="255dp"
 
-        android:textSize="15sp"
+        android:textSize="14sp"
 
+        app:layout_goneMarginLeft="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/floroxa"
@@ -498,56 +455,11 @@
         app:layout_constraintTop_toBottomOf="@id/textocostela"
         />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/cacto2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
 
-        android:src="@drawable/cacto2"
-        android:layout_marginRight="253dp"
-        android:layout_marginTop="50dp"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/costeladeadao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textocacto2"
-        />
 
-    <TextView
-        android:id="@+id/textocacto2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cacto Orelha de Coelho"
 
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginBottom="60dp"
-        android:layout_marginRight="255dp"
 
-        android:textSize="14sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cacto2"
-        />
-
-    <TextView
-        android:id="@+id/precocacto2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 6,50"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginRight="253dp"
-        android:layout_marginBottom="40dp"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textocacto2"
-        />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/girassol"
@@ -701,67 +613,19 @@
         app:layout_constraintTop_toBottomOf="@id/textoliriobranco"
         />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/anturio"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:src="@drawable/anturio"
-
-        android:layout_marginTop="50dp"
-
-        app:layout_constraintTop_toBottomOf="@id/liriobranco"
-        app:layout_constraintStart_toEndOf="@id/espadadesaojorge"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/textoanturio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="Antúrio"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:textSize="15sp"
-        android:layout_marginBottom="60dp"
-        android:layout_marginLeft="253dp"
-
-        app:layout_constraintTop_toBottomOf="@id/anturio"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/precoanturio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 6,50"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-
-        android:layout_marginLeft="253dp"
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoanturio"
-        />
 
     <View
         android:id="@+id/rodape"
         android:layout_width="match_parent"
         android:layout_height="100dp"
 
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@color/verde"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precocacto"
+        app:layout_constraintTop_toBottomOf="@id/precoespada"
         />
 
 

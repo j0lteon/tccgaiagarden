@@ -257,56 +257,10 @@
         app:layout_constraintTop_toBottomOf="@id/textonivosa"
         />
 
-    <ImageView
-        android:id="@+id/texano"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
 
-        android:src="@drawable/cactodemamilotexano"
-        android:layout_marginRight="253dp"
-        android:layout_marginTop="50dp"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nivosa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textotexano"
-        />
 
-    <TextView
-        android:id="@+id/textotexano"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mamilo Texano"
 
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginBottom="60dp"
-        android:layout_marginRight="255dp"
-
-        android:textSize="14sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/texano"
-        />
-
-    <TextView
-        android:id="@+id/precotexano"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 23,00"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginRight="253dp"
-        android:layout_marginBottom="40dp"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textotexano"
-        />
 
     <ImageView
         android:id="@+id/cacto2"
@@ -451,54 +405,11 @@
         app:layout_constraintTop_toBottomOf="@id/textoaurespina"
         />
 
-    <ImageView
-        android:id="@+id/mystax"
 
-        android:src="@drawable/mammillariamystax"
 
-        android:layout_width="100dp"
-        android:layout_height="100dp"
 
-        android:layout_marginTop="50dp"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/aureispina"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textomystax"
-        />
 
-    <TextView
-        android:id="@+id/textomystax"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="Mammillaria Mystax"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:textSize="15sp"
-        android:layout_marginBottom="60dp"
-
-        app:layout_constraintTop_toBottomOf="@id/mystax"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/precoMystax"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 46,00"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textomystax"
-        />
 
     <ImageView
         android:id="@+id/cactolimao"
@@ -652,69 +563,19 @@
         app:layout_constraintTop_toBottomOf="@id/textowarasii"
         />
 
-    <ImageView
-        android:id="@+id/frailea"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:src="@drawable/cactofrailea"
-
-        android:layout_marginTop="50dp"
-
-        android:layout_marginLeft="256dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/warasii"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        />
-
-    <TextView
-        android:id="@+id/textofrailea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fraileana"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginLeft="255dp"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/frailea"
-        />
-
-    <TextView
-        android:id="@+id/precofrailea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 16,50"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginLeft="253dp"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textofrailea"
-        />
 
     <View
         android:id="@+id/rodape"
         android:layout_width="match_parent"
         android:layout_height="100dp"
 
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@color/verde"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precotexano"
+        app:layout_constraintTop_toBottomOf="@id/precoaureispina"
         />
 
 

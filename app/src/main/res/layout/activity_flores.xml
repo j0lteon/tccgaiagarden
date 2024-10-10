@@ -257,56 +257,6 @@
         app:layout_constraintTop_toBottomOf="@id/textocopo"
         />
 
-    <ImageView
-        android:id="@+id/girassol"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:src="@drawable/girassol"
-        android:layout_marginRight="253dp"
-        android:layout_marginTop="50dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/copodeleite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textogirassol"
-        />
-
-    <TextView
-        android:id="@+id/textogirassol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Girassol"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginBottom="60dp"
-        android:layout_marginRight="255dp"
-
-        android:textSize="14sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/girassol"
-        />
-
-    <TextView
-        android:id="@+id/precogirassol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 6,50"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginRight="253dp"
-        android:layout_marginBottom="40dp"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textogirassol"
-        />
 
     <ImageView
         android:id="@+id/orquidea"
@@ -449,55 +399,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textomargaridas"
-        />
-
-    <ImageView
-        android:id="@+id/liriolaranja"
-
-        android:src="@drawable/liriolaranja"
-
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:layout_marginTop="50dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/margaridas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textoliriolaranja"
-        />
-
-    <TextView
-        android:id="@+id/textoliriolaranja"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="Lírio Laranja"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:textSize="15sp"
-        android:layout_marginBottom="60dp"
-
-        app:layout_constraintTop_toBottomOf="@id/liriolaranja"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/precoliriolaranja"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 6,50"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textoliriolaranja"
         />
 
     <ImageView
@@ -652,69 +553,19 @@
         app:layout_constraintTop_toBottomOf="@id/textocravo"
         />
 
-    <ImageView
-        android:id="@+id/bromelia"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:src="@drawable/bromelia"
-
-        android:layout_marginTop="50dp"
-
-        android:layout_marginLeft="256dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cravo"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        />
-
-    <TextView
-        android:id="@+id/textobromelia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bromélia"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginLeft="255dp"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bromelia"
-        />
-
-    <TextView
-        android:id="@+id/precobromelia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 6,50"
-
-        android:textStyle="bold"
-        android:textColor="@color/texto"
-        android:layout_marginLeft="253dp"
-
-        android:textSize="15sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textobromelia"
-        />
 
     <View
         android:id="@+id/rodape"
         android:layout_width="match_parent"
         android:layout_height="100dp"
 
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@color/verde"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precogirassol"
+        app:layout_constraintTop_toBottomOf="@id/precomargaridas"
         />
 
 
