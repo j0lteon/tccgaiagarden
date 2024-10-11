@@ -12,44 +12,40 @@ import android.widget.TextView;
 
 public class DescricaoFlores extends AppCompatActivity {
 
-    AppCompatImageView estrela;
-
     ImageView gaiagardenlogo;
 
     AppCompatImageView faleconosco;
 
     ImageView home;
 
+    TextView textofaleconosco;
 
-    private TextView textofaleconosco;
+    TextView hometexto;
 
-    private TextView hometexto;
+    AppCompatImageView perfil;
 
-    private TextView meusfavoritos;
+    TextView perfiltexto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_descricao_flores);
 
-        estrela = findViewById(R.id.estrela);
+        perfil = findViewById(R.id.perfil);
 
-        estrela.setOnClickListener(new View.OnClickListener() {
+        perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent it = new Intent(DescricaoFlores.this, Meus_Favoritos.class);
+                Intent it = new Intent(DescricaoFlores.this, Perfil.class);
                 startActivity(it);
             }
         });
 
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes3();
-
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+        perfiltexto.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent it = new Intent(DescricaoFlores.this, Meus_Favoritos.class);
+            public void onClick(View v) {
+                Intent it = new Intent(DescricaoFlores.this, Perfil.class);
                 startActivity(it);
             }
         });
@@ -65,7 +61,6 @@ public class DescricaoFlores extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes();
 
         faleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +93,6 @@ public class DescricaoFlores extends AppCompatActivity {
         });
 
         hometexto = findViewById(R.id.hometexto);
-        IniciarComponentes2();
 
         hometexto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,30 +102,6 @@ public class DescricaoFlores extends AppCompatActivity {
             }
         });
 
-        Button addfav = findViewById(R.id.addfav);
 
-        addfav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it =  new Intent(DescricaoFlores.this, Meus_Favoritos.class);
-                startActivity(it);
-
-            }
-        });
-
-    }
-    private void IniciarComponentes(){
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-    }
-
-    private void IniciarComponentes2(){
-
-        hometexto = findViewById(R.id.hometexto);
-    }
-
-    private void IniciarComponentes3(){
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
     }
 }

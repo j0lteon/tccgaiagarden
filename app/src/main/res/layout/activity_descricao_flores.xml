@@ -11,7 +11,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DescricaoFlores">
+    tools:context=".DescricaoFlores"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/logo1"
@@ -38,12 +39,11 @@
         />
 
     <ImageView
-        android:id="@+id/home"
-        android:src="@drawable/home"
+        android:id="@+id/voltar"
+        android:src="@drawable/seta"
 
         android:layout_width="30dp"
         android:layout_height="40dp"
-
         android:layout_marginRight="366dp"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,64 +53,64 @@
         />
 
     <TextView
-        android:id="@+id/hometexto"
+        android:id="@+id/voltartexto"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Início"
-
+        android:text="Voltar"
 
         android:layout_marginLeft="5dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="22sp"
 
 
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/home"
+        app:layout_constraintStart_toEndOf="@id/voltar"
         />
 
 
 
-    <ImageView
-        android:id="@+id/estrela"
-        android:src="@drawable/estrela"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/perfil"
+        android:src="@drawable/perfil"
 
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
 
-        android:layout_marginLeft="65dp"
+        android:layout_marginLeft="80dp"
 
-        app:layout_constraintStart_toEndOf="@id/hometexto"
+        app:layout_constraintStart_toEndOf="@id/voltartexto"
         app:layout_constraintTop_toTopOf="@id/barra"
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
-        android:id="@+id/meusfavoritos"
-        android:text="Meus favoritos"
+        android:id="@+id/perfiltexto"
+        android:text="Perfil"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:layout_marginRight="22dp"
 
-        android:layout_marginLeft="4dp"
-
-        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/perfil"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/estrela"
+        app:layout_constraintTop_toTopOf="@id/barra"
         />
 
     <ImageView
 
         android:id="@+id/orquidea"
         android:src="@drawable/orquidea"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="235dp"
 
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintTop_toBottomOf="@id/barra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +128,7 @@
         android:textColor="@color/titulo"
         android:textStyle="bold"
 
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -165,34 +165,20 @@
         android:textAlignment="center"
 
         android:textColor="@color/texto"
-        android:textSize="15sp"
+        android:textSize="18sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/preco"
         />
 
-    <Button
-        android:id="@+id/addfav"
-        style="@style/Add_fav"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:backgroundTint="@color/verde"
-        android:text="Adicionar aos meus favoritos"
-
-        app:layout_constraintTop_toBottomOf="@id/desc_orquidea"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
 
     <View
         android:id="@+id/rodape"
         android:layout_width="match_parent"
         android:layout_height="100dp"
 
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="100dp"
         android:background="@color/verde"
 
 
@@ -200,7 +186,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/addfav"
+        app:layout_constraintTop_toBottomOf="@id/desc_orquidea"
         />
 
 

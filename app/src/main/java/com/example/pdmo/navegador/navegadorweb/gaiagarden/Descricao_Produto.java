@@ -12,7 +12,9 @@ import android.widget.TextView;
 
 public class Descricao_Produto extends AppCompatActivity {
 
-    AppCompatImageView estrela;
+    AppCompatImageView perfil;
+
+    TextView perfiltexto;
 
     AppCompatImageView faleconosco;
 
@@ -20,45 +22,31 @@ public class Descricao_Produto extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    private TextView textofaleconosco;
+    TextView textofaleconosco;
 
-    private TextView hometexto;
-
-    private TextView meusfavoritos;
+    TextView hometexto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_descricao_produto);
 
-        Button button = findViewById(R.id.addfav);
-        button.setOnClickListener(new View.OnClickListener() {
+        perfil = findViewById(R.id.perfil);
+
+        perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(Descricao_Produto.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-
-        });
-
-        estrela = findViewById(R.id.estrela);
-
-        estrela.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Descricao_Produto.this, Meus_Favoritos.class);
+                Intent it = new Intent(Descricao_Produto.this, Perfil.class);
                 startActivity(it);
             }
         });
 
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes3();
+        perfiltexto = findViewById(R.id.perfiltexto);
 
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+        perfiltexto.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Descricao_Produto.this, Meus_Favoritos.class);
+            public void onClick(View v) {
+                Intent it = new Intent(Descricao_Produto.this, Perfil.class);
                 startActivity(it);
             }
         });
@@ -75,7 +63,6 @@ public class Descricao_Produto extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes();
 
         textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,7 +84,6 @@ public class Descricao_Produto extends AppCompatActivity {
         });
 
         hometexto = findViewById(R.id.hometexto);
-        IniciarComponentes2();
 
         hometexto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,33 +104,8 @@ public class Descricao_Produto extends AppCompatActivity {
             }
         });
 
-        Button addfav = findViewById(R.id.addfav);
-
-            addfav.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent it =  new Intent(Descricao_Produto.this, Meus_Favoritos.class);
-                    startActivity(it);
-
-                }
-
-            });
         }
 
-    private void IniciarComponentes(){
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-    }
-
-    private void IniciarComponentes2(){
-
-        hometexto = findViewById(R.id.hometexto);
-    }
-
-    private void IniciarComponentes3(){
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-    }
 }
 
 

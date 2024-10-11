@@ -1,6 +1,7 @@
 package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 
 
 import android.content.Intent;
@@ -12,7 +13,6 @@ import android.widget.TextView;
 
 public class DescricaoMudas extends AppCompatActivity {
 
-    ImageView estrela;
 
     ImageView gaiagardenlogo;
 
@@ -20,16 +20,19 @@ public class DescricaoMudas extends AppCompatActivity {
 
     ImageView home;
 
-    private TextView textofaleconosco;
+    AppCompatImageView perfil;
 
-    private TextView hometexto;
+    TextView perfiltexto;
 
-    private TextView meusfavoritos;
+    TextView textofaleconosco;
+
+    TextView hometexto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_descricao_mudas);
+
 
         gaiagardenlogo = findViewById(R.id.logo1);
 
@@ -42,26 +45,26 @@ public class DescricaoMudas extends AppCompatActivity {
             }
         });
 
-        estrela = findViewById(R.id.estrela);
+        perfil = findViewById(R.id.perfil);
 
-        estrela.setOnClickListener(new View.OnClickListener() {
+        perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent it = new Intent(DescricaoMudas.this, Meus_Favoritos.class);
+                Intent it = new Intent(DescricaoMudas.this, Perfil.class);
                 startActivity(it);
             }
         });
 
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes3();
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
+        perfiltexto = findViewById(R.id.perfiltexto);
+
+        perfiltexto.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent it = new Intent(DescricaoMudas.this, Meus_Favoritos.class);
+            public void onClick(View v) {
+                Intent it = new Intent(DescricaoMudas.this, Perfil.class);
                 startActivity(it);
             }
         });
+
 
         faleconosco = findViewById(R.id.imgfalecnsc);
 
@@ -75,7 +78,6 @@ public class DescricaoMudas extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes();
 
         textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,7 +99,6 @@ public class DescricaoMudas extends AppCompatActivity {
         });
 
         hometexto = findViewById(R.id.hometexto);
-        IniciarComponentes2();
 
         hometexto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,31 +108,6 @@ public class DescricaoMudas extends AppCompatActivity {
             }
         });
 
-        Button addfav = findViewById(R.id.addfav);
 
-        addfav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it =  new Intent(DescricaoMudas.this, Meus_Favoritos.class);
-                startActivity(it);
-
-            }
-        });
-
-
-    }
-    private void IniciarComponentes(){
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-    }
-
-    private void IniciarComponentes2(){
-
-        hometexto = findViewById(R.id.hometexto);
-    }
-
-    private void IniciarComponentes3(){
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
     }
 }

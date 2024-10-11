@@ -66,7 +66,7 @@
         android:layout_marginLeft="5dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="22sp"
 
 
         app:layout_constraintBottom_toBottomOf="@id/barra"
@@ -74,12 +74,12 @@
         app:layout_constraintStart_toEndOf="@id/voltar"
         />
 
-    <ImageView
-        android:id="@+id/estrela"
-        android:src="@drawable/estrela"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/perfil"
+        android:src="@drawable/perfil"
 
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
 
         android:layout_marginLeft="80dp"
 
@@ -90,15 +90,17 @@
         />
 
     <TextView
-        android:id="@+id/meusfavoritos"
-        android:text="Meus Favoritos"
+        android:id="@+id/perfiltexto"
+        android:text="Perfil"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:layout_marginRight="22dp"
 
-        app:layout_constraintStart_toEndOf="@id/estrela"
+        app:layout_constraintStart_toEndOf="@id/perfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"

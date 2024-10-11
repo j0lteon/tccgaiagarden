@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 public class DescricaoCactos extends AppCompatActivity {
 
-    AppCompatImageView estrela;
 
     ImageView gaiagardenlogo;
 
@@ -20,49 +19,41 @@ public class DescricaoCactos extends AppCompatActivity {
 
     ImageView home;
 
-    private TextView textofaleconosco;
+    TextView textofaleconosco;
 
-    private TextView hometexto;
+    TextView hometexto;
 
-    private TextView meusfavoritos;
+    AppCompatImageView perfil;
+
+    TextView perfiltexto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_descricao_cactos);
 
-        Button button = findViewById(R.id.addfav);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        perfil = findViewById(R.id.perfil);
+
+        perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(DescricaoCactos.this, Meus_Favoritos.class);
+                Intent it = new Intent(DescricaoCactos.this, Perfil.class);
                 startActivity(it);
             }
-
         });
 
+        perfiltexto = findViewById(R.id.perfiltexto);
 
-        estrela = findViewById(R.id.estrela);
-
-        estrela.setOnClickListener(new View.OnClickListener() {
+        perfiltexto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent it = new Intent(DescricaoCactos.this, Meus_Favoritos.class);
+                Intent it = new Intent(DescricaoCactos.this, Perfil.class);
                 startActivity(it);
             }
         });
 
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes3();
-
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(DescricaoCactos.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
 
         faleconosco = findViewById(R.id.imgfalecnsc);
 

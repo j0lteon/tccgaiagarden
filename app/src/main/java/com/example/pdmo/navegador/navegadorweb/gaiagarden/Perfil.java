@@ -11,7 +11,6 @@ import android.widget.TextView;
 public class Perfil extends AppCompatActivity {
 
     TextView user;
-    Button btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +18,6 @@ public class Perfil extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
 
         user = findViewById(R.id.user);
-        btnLogout = findViewById(R.id.logout);
-
-        btnLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
     }
 }
