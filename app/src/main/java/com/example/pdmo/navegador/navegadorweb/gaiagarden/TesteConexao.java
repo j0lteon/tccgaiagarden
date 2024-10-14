@@ -43,7 +43,7 @@ public class TesteConexao extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(TesteConexao.this, Cadastro.class);
+                Intent it = new Intent(TesteConexao.this, Login2.class);
                 startActivity(it);
             }
         });

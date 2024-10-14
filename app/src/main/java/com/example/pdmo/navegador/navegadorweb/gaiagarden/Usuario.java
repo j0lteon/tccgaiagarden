@@ -13,6 +13,12 @@ public class Usuario {
     private LocalDate dataCadastro;
     private String statusUsuario;
 
+    public Usuario(int id, String nome, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+    }
+
     public Usuario(String nome, String email, String senha, String nivelAcesso, String telefone, LocalDate dataCadastro, String statusUsuario) {
         this.nome = nome;
         this.email = email;

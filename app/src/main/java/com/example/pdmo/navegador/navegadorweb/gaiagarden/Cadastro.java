@@ -109,8 +109,8 @@ public class Cadastro extends AppCompatActivity {
     }
 
     public boolean isSenhaValida(String senha) {
-        if (senha.length() < 6) {
-            Snackbar.make(btnInserir, "Senha deve conter no mínimo 6 caracteres", Snackbar.LENGTH_LONG).show();
+        if (senha.length() < 8) {
+            Snackbar.make(btnInserir, "Senha deve conter no mínimo 8 caracteres", Snackbar.LENGTH_LONG).show();
             return false;
         }
         return true;

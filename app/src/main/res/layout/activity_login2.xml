@@ -7,29 +7,36 @@
     android:background="@drawable/gradiente"
     tools:context=".Login2">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-
-        android:src="@drawable/gaiagardensimples"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/container"
-
-        />
 
     <View
         android:id="@+id/container"
         style="@style/ContainerComponents"
+        android:layout_height="400dp"
+
+        android:layout_marginTop="50dp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/entrar"
         />
+
+    <TextView
+        android:id="@+id/bemvindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="serif"
+        android:text="Realizar Login"
+        android:textColor="@color/titulo"
+
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+
+        app:layout_constraintTop_toTopOf="@id/container" />
 
     <EditText
         android:id="@+id/edit_email"
@@ -39,7 +46,7 @@
         style="@style/Edit_text"
         android:background="@drawable/edit_text"
 
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="100dp"
 
         android:hint="E-mail:"
         android:inputType="textEmailAddress"
@@ -90,10 +97,10 @@
         android:backgroundTint="@color/verde"
         android:text="@string/entrar"
 
+        android:layout_marginBottom="50dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
