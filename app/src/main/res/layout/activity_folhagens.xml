@@ -6,12 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     tools:context=".Folhagens">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Folhagens">
+    tools:context=".Folhagens"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/logo1"
@@ -41,50 +42,18 @@
         app:layout_constraintBottom_toTopOf="@id/espadadesaojorge"
         />
 
-    <ImageView
-        android:id="@+id/voltar"
-        android:src="@drawable/seta"
-
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="366dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo1"
-        app:layout_constraintStart_toStartOf="@id/barra"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
-        />
-
-    <TextView
-        android:id="@+id/voltartexto"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Voltar"
-
-        android:layout_marginLeft="5dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-
-
-        app:layout_constraintBottom_toBottomOf="@id/barra"
-        app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintStart_toEndOf="@id/voltar"
-        />
-
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/perfil"
         android:src="@drawable/perfil"
 
         android:layout_height="35dp"
         android:layout_width="35dp"
+        android:layout_marginRight="360dp"
 
-        android:layout_marginLeft="80dp"
-
-        app:layout_constraintStart_toEndOf="@id/voltartexto"
-        app:layout_constraintTop_toTopOf="@id/barra"
-        app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
         />
 
     <TextView
@@ -96,12 +65,11 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_marginRight="22dp"
+        android:layout_marginLeft="5dp"
 
-        app:layout_constraintStart_toEndOf="@id/perfil"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/barra"
         app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/perfil"
         />
 
     <ImageView

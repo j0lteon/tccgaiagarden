@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Cadastro"
+    android:background="@color/white"
 >
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -13,69 +14,31 @@
     android:background="@color/white"
     tools:context=".Cadastro">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="35dp"
-        android:background="@color/verde"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/Cadastrar"/>
-
-    <TextView
-        android:id="@+id/voltar"
-        android:layout_width="84dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="284dp"
-        android:text="@string/voltar"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="20sp"
-
-        app:layout_constraintStart_toEndOf="@id/imageView2"
-        app:layout_constraintTop_toTopOf="@id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="30dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/seta"
-
-        app:layout_constraintStart_toStartOf="@id/view"
-        app:layout_constraintTop_toTopOf="@id/view"
-         />
 
     <TextView
         android:id="@+id/Cadastrar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cadastre_se"
         android:textAlignment="center"
         android:textColor="@color/titulo"
         android:textSize="30sp"
+
+        android:layout_marginTop="40dp"
+
         android:textStyle="bold"
 
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/preencha"
         />
 
     <TextView
         android:id="@+id/preencha"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:text="@string/preencha_todos_os_campos"
         android:textColor="@color/texto"
@@ -97,7 +60,7 @@
         style="@style/Edit_text"
         android:background="@drawable/edit_text"
 
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="45dp"
 
         android:hint="E-mail:"
         android:inputType="textEmailAddress"
@@ -164,11 +127,12 @@
     <Button
         android:id="@+id/cadastrar"
         style="@style/Button"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/verde"
         android:text="@string/cadastrar"
         android:textSize="25sp"
 
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_senha"

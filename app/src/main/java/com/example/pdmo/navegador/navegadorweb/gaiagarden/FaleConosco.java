@@ -34,17 +34,6 @@ public class FaleConosco extends AppCompatActivity {
         edit_mensagem = findViewById(R.id.edit_mensagem);
         btnInserir = findViewById(R.id.enviar);
 
-        seta = findViewById(R.id.seta);
-
-        seta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(FaleConosco.this, Home.class);
-                startActivity(it);
-            }
-        });
-
         btnInserir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

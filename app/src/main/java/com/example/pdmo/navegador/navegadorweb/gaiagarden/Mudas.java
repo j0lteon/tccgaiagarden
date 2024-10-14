@@ -22,10 +22,6 @@ public class Mudas extends AppCompatActivity {
 
     private TextView textomuda;
 
-    private TextView voltartexto;
-
-    private TextView meusfavoritos;
-
     private TextView textofaleconosco;
 
 
@@ -46,33 +42,10 @@ public class Mudas extends AppCompatActivity {
         });
 
         textomuda = findViewById(R.id.textomuda);
-        IniciarComponentes2();
         textomuda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Mudas.this, DescricaoMudas.class);
-                startActivity(it);
-            }
-        });
-
-        seta = findViewById(R.id.voltar);
-
-        seta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Mudas.this, Categorias.class);
-                startActivity(it);
-            }
-        });
-
-        voltartexto = findViewById(R.id.voltartexto);
-        IniciarComponentes3();
-
-        voltartexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Mudas.this, Categorias.class);
                 startActivity(it);
             }
         });
@@ -89,28 +62,6 @@ public class Mudas extends AppCompatActivity {
             }
         });
 
-        estrela = findViewById(R.id.estrela);
-
-        estrela.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Mudas.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes4();
-
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Mudas.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
-
         faleconosco = findViewById(R.id.imgfalecnsc);
 
         faleconosco.setOnClickListener(new View.OnClickListener() {
@@ -123,7 +74,6 @@ public class Mudas extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes();
 
         textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,24 +83,5 @@ public class Mudas extends AppCompatActivity {
             }
         });
 
-    }
-    private void IniciarComponentes(){
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-    }
-
-    private void IniciarComponentes2(){
-
-        textomuda = findViewById(R.id.textomuda);
-    }
-
-    private void IniciarComponentes3(){
-
-        voltartexto = findViewById(R.id.voltartexto);
-    }
-
-    private void IniciarComponentes4(){
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
     }
 }

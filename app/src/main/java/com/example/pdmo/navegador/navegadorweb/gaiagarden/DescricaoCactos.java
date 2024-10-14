@@ -67,35 +67,11 @@ public class DescricaoCactos extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes();
 
         textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(DescricaoCactos.this, FaleConosco.class);
-                startActivity(it);
-            }
-        });
-
-
-        home = findViewById(R.id.home);
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(DescricaoCactos.this, Home.class);
-                startActivity(it);
-            }
-        });
-
-        hometexto = findViewById(R.id.hometexto);
-        IniciarComponentes2();
-
-        hometexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(DescricaoCactos.this, Home.class);
                 startActivity(it);
             }
         });
@@ -111,29 +87,5 @@ public class DescricaoCactos extends AppCompatActivity {
             }
         });
 
-        Button addfav = findViewById(R.id.addfav);
-
-        addfav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it =  new Intent(DescricaoCactos.this, Meus_Favoritos.class);
-                startActivity(it);
-
-            }
-        });
      }
-    private void IniciarComponentes(){
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-    }
-
-    private void IniciarComponentes2(){
-
-        hometexto = findViewById(R.id.hometexto);
-    }
-
-    private void IniciarComponentes3(){
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-    }
 }

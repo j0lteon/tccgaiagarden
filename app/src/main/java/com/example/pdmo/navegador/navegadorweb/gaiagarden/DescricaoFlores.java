@@ -81,27 +81,6 @@ public class DescricaoFlores extends AppCompatActivity {
             }
         });
 
-        home = findViewById(R.id.home);
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(DescricaoFlores.this, Home.class);
-                startActivity(it);
-            }
-        });
-
-        hometexto = findViewById(R.id.hometexto);
-
-        hometexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(DescricaoFlores.this, Home.class);
-                startActivity(it);
-            }
-        });
-
 
     }
 }

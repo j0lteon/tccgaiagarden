@@ -18,17 +18,11 @@ public class Flores extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    ImageView estrela;
-
     ImageView faleconosco;
 
-    private TextView voltartexto;
+    TextView textoorquidea;
 
-    private TextView meusfavoritos;
-
-    private TextView textoorquidea;
-
-    private TextView textofaleconosco;
+    TextView textofaleconosco;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,47 +39,6 @@ public class Flores extends AppCompatActivity {
             }
         });
 
-        estrela = findViewById(R.id.estrela);
-
-        estrela.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Flores.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes3();
-
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Flores.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
-
-        seta = findViewById(R.id.voltar);
-
-        seta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Flores.this, Categorias.class);
-                startActivity(it);
-            }
-        });
-
-        voltartexto = findViewById(R.id.voltartexto);
-        IniciarComponentes2();
-
-        voltartexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Flores.this, Categorias.class);
-                startActivity(it);
-            }
-        });
 
         orquidea = findViewById(R.id.orquidea);
 
@@ -98,7 +51,6 @@ public class Flores extends AppCompatActivity {
         });
 
         textoorquidea = findViewById(R.id.textoorquidea);
-        IniciarComponentes4();
 
         textoorquidea.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,7 +72,6 @@ public class Flores extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes();
 
         textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,23 +82,4 @@ public class Flores extends AppCompatActivity {
         });
     }
 
-    private void IniciarComponentes(){
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-    }
-
-    private void IniciarComponentes2(){
-
-        voltartexto = findViewById(R.id.voltartexto);
-    }
-
-    private void IniciarComponentes3(){
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-    }
-
-    private void IniciarComponentes4(){
-
-        textoorquidea = findViewById(R.id.textoorquidea);
-    }
 }

@@ -26,11 +26,6 @@ import kotlin.text.Regex;
 
 public class Cadastro extends AppCompatActivity {
 
-    ImageView seta;
-
-
-    private TextView voltar;
-
     EditText edit_email, edit_senha, edit_nome, edit_tell;
     Button btnInserir;
 
@@ -104,28 +99,6 @@ public class Cadastro extends AppCompatActivity {
 
         });
 
-
-        seta = findViewById(R.id.imageView2);
-
-        seta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(Cadastro.this, Login2.class);
-                startActivity(it);
-            }
-        });
-
-        voltar = findViewById(R.id.voltar);
-        IniciarComponentes();
-
-        voltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(Cadastro.this, Login2.class);
-                startActivity(it);
-            }
-        });
-
     }
 
     public boolean isEmailValido(String email) {
@@ -154,12 +127,5 @@ public class Cadastro extends AppCompatActivity {
         }
         return false;
     }
-
-
-    private void IniciarComponentes() {
-
-        voltar = findViewById(R.id.voltar);
-    }
-
 
 }

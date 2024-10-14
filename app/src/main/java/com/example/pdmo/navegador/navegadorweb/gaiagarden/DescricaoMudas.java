@@ -18,15 +18,11 @@ public class DescricaoMudas extends AppCompatActivity {
 
     ImageView faleconosco;
 
-    ImageView home;
-
     AppCompatImageView perfil;
 
     TextView perfiltexto;
 
     TextView textofaleconosco;
-
-    TextView hometexto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,27 +79,6 @@ public class DescricaoMudas extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(DescricaoMudas.this, FaleConosco.class);
-                startActivity(it);
-            }
-        });
-
-        home = findViewById(R.id.home);
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(DescricaoMudas.this, Home.class);
-                startActivity(it);
-            }
-        });
-
-        hometexto = findViewById(R.id.hometexto);
-
-        hometexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(DescricaoMudas.this, Home.class);
                 startActivity(it);
             }
         });

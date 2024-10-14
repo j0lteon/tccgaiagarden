@@ -14,21 +14,14 @@ public class Folhagens extends AppCompatActivity {
 
     AppCompatImageView espadadesaojorge;
 
-    ImageView seta;
-
     ImageView gaiagardenlogo;
 
-    ImageView estrela;
 
     AppCompatImageView faleconosco;
 
-    private TextView voltartexto;
+     TextView textoespada;
 
-    private TextView meusfavoritos;
-
-    private TextView textoespada;
-
-    private TextView textofaleconosco;
+     TextView textofaleconosco;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +40,6 @@ public class Folhagens extends AppCompatActivity {
         });
 
         textoespada = findViewById(R.id.textoespada);
-        IniciarComponentes3();
 
         textoespada.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,48 +49,6 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
-        seta = findViewById(R.id.voltar);
-
-        seta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Folhagens.this, Categorias.class);
-                startActivity(it);
-            }
-        });
-
-        voltartexto = findViewById(R.id.voltartexto);
-        IniciarComponentes();
-        voltartexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(Folhagens.this, Cadastro.class);
-                startActivity(it);
-            }
-        });
-
-        estrela = findViewById(R.id.estrela);
-
-        estrela.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Folhagens.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes2();
-
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Folhagens.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
 
         faleconosco = findViewById(R.id.imgfalecnsc);
 
@@ -112,7 +62,6 @@ public class Folhagens extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes4();
         textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -132,25 +81,5 @@ public class Folhagens extends AppCompatActivity {
             }
         });
 
-    }
-
-    private void IniciarComponentes() {
-
-        voltartexto = findViewById(R.id.voltartexto);
-    }
-
-    private void IniciarComponentes2() {
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-    }
-
-    private void IniciarComponentes3() {
-
-        textoespada = findViewById(R.id.textoespada);
-    }
-
-    private void IniciarComponentes4() {
-
-        textofaleconosco = findViewById(R.id.faleconosco);
     }
 }

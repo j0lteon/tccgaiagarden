@@ -2,6 +2,7 @@ package com.example.pdmo.navegador.navegadorweb.gaiagarden;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -19,5 +20,14 @@ public class Perfil extends AppCompatActivity {
 
         user = findViewById(R.id.user);
 
+        Button btn = findViewById(R.id.inicio);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Perfil.this, Home.class);
+                startActivity(it);
+            }
+        });
     }
 }

@@ -21,13 +21,9 @@ public class Cactos extends AppCompatActivity {
 
     AppCompatImageView faleconosco;
 
-    private TextView textofaleconosco;
+    TextView textofaleconosco;
 
-    private TextView textocacto2;
-
-    private TextView voltartexto;
-
-    private TextView meusfavoritos;
+    TextView textocacto2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,34 +42,11 @@ public class Cactos extends AppCompatActivity {
         });
 
         textocacto2 = findViewById(R.id.textocacto2);
-        IniciarComponentes2();
 
         textocacto2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Cactos.this, DescricaoCactos.class);
-                startActivity(it);
-            }
-        });
-
-        seta = findViewById(R.id.voltar);
-
-        seta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Cactos.this, Categorias.class);
-                startActivity(it);
-            }
-        });
-
-        voltartexto = findViewById(R.id.voltartexto);
-        IniciarComponentes3();
-
-        voltartexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Cactos.this, Categorias.class);
                 startActivity(it);
             }
         });
@@ -85,28 +58,6 @@ public class Cactos extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent it = new Intent(Cactos.this, Home.class);
-                startActivity(it);
-            }
-        });
-
-        estrela = findViewById(R.id.estrela);
-
-        estrela.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Cactos.this, Meus_Favoritos.class);
-                startActivity(it);
-            }
-        });
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
-        IniciarComponentes4();
-
-        meusfavoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Cactos.this, Meus_Favoritos.class);
                 startActivity(it);
             }
         });
@@ -124,7 +75,6 @@ public class Cactos extends AppCompatActivity {
         });
 
         textofaleconosco = findViewById(R.id.faleconosco);
-        IniciarComponentes();
 
         textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,25 +85,5 @@ public class Cactos extends AppCompatActivity {
         });
 
 
-    }
-
-    private void IniciarComponentes(){
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-    }
-
-    private void IniciarComponentes2(){
-
-        textocacto2 = findViewById(R.id.textocacto2);
-    }
-
-    private void IniciarComponentes3(){
-
-        voltartexto = findViewById(R.id.voltartexto);
-    }
-
-    private void IniciarComponentes4(){
-
-        meusfavoritos = findViewById(R.id.meusfavoritos);
     }
 }
