@@ -68,24 +68,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        faleconosco = findViewById(R.id.imgfalecnsc);
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Home.this, FaleConosco.class);
-                startActivity(intent);
-            }
-        });
-
-        textofaleconosco = findViewById(R.id.faleconosco);
-        faleconosco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(Home.this, FaleConosco.class);
-                startActivity(it);
-            }
-        });
 
         menu_home = findViewById(R.id.iconmenu);
 

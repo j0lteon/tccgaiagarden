@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -44,6 +45,16 @@ public class EditarPerfil extends AppCompatActivity {
                 Intent it = new Intent(this, Perfil.class);
                 startActivity(it);
             }));
+
+            Button btnCancel = findViewById(R.id.cancelar);
+
+            btnCancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent it = new Intent(EditarPerfil.this, Perfil.class);
+                    startActivity(it);
+                }
+            });
         }catch (Exception e){
 
         }

@@ -15,13 +15,9 @@ public class DescricaoCactos extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    AppCompatImageView faleconosco;
-
-    ImageView home;
+    ImageView faleconosco;
 
     TextView textofaleconosco;
-
-    TextView hometexto;
 
     AppCompatImageView perfil;
 

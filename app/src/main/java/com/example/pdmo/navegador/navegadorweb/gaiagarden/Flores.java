@@ -14,7 +14,9 @@ public class Flores extends AppCompatActivity {
 
     ImageView orquidea;
 
-    ImageView seta;
+    AppCompatImageView perfil;
+
+    TextView perfiltexto;
 
     ImageView gaiagardenlogo;
 
@@ -35,6 +37,26 @@ public class Flores extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Flores.this, Home.class);
+                startActivity(it);
+            }
+        });
+
+        perfil = findViewById(R.id.perfil);
+
+        perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Flores.this, Perfil.class);
+                startActivity(it);
+            }
+        });
+
+        perfiltexto = findViewById(R.id.perfiltexto);
+
+        perfiltexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Flores.this, Perfil.class);
                 startActivity(it);
             }
         });

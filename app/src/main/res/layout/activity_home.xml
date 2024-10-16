@@ -158,7 +158,7 @@
         android:id="@+id/precoorquidea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 98,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -173,7 +173,7 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/lirio"
 
-        android:src="@drawable/liriolaranja"
+        android:src="@drawable/florroxa"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -190,7 +190,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Lírio Laranja"
+        android:text="Flor Roxa"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -205,7 +205,7 @@
         android:id="@+id/precolirio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 80,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -254,7 +254,7 @@
         android:id="@+id/precoespada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 47,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -303,7 +303,7 @@
         android:id="@+id/precomuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 20,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -355,7 +355,7 @@
         android:id="@+id/precofloroxa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 21,90"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -406,8 +406,7 @@
         android:id="@+id/precocostela"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
-
+        android:text="R$ 50,00"
         android:textStyle="bold"
         android:textColor="@color/texto"
         android:layout_marginRight="253dp"
@@ -431,7 +430,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:src="@drawable/girassol"
+        android:src="@drawable/rosas"
 
         android:layout_marginTop="276dp"
 
@@ -445,7 +444,7 @@
         android:id="@+id/textogirassol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Girassol"
+        android:text="Rosas"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -463,7 +462,7 @@
         android:id="@+id/precogirassol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 78,90"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -515,7 +514,7 @@
         android:id="@+id/precocopo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 90,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -565,7 +564,7 @@
         android:id="@+id/precoliriobranco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 80,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"

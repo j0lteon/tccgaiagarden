@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,15 +17,11 @@ public class Descricao_Produto extends AppCompatActivity {
 
     TextView perfiltexto;
 
-    AppCompatImageView faleconosco;
-
-    ImageView home;
+    ImageView faleconosco;
 
     ImageView gaiagardenlogo;
 
     TextView textofaleconosco;
-
-    TextView hometexto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,26 +69,6 @@ public class Descricao_Produto extends AppCompatActivity {
             }
         });
 
-        home = findViewById(R.id.home);
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent it = new Intent(Descricao_Produto.this, Home.class);
-                startActivity(it);
-            }
-        });
-
-        hometexto = findViewById(R.id.hometexto);
-
-        hometexto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(Descricao_Produto.this, Home.class);
-                startActivity(it);
-            }
-        });
 
         gaiagardenlogo = findViewById(R.id.logo1);
 

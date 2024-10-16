@@ -6,7 +6,6 @@ import androidx.appcompat.widget.AppCompatImageView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,13 +13,9 @@ public class DescricaoFlores extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
-    AppCompatImageView faleconosco;
-
-    ImageView home;
+    ImageView faleconosco;
 
     TextView textofaleconosco;
-
-    TextView hometexto;
 
     AppCompatImageView perfil;
 
@@ -42,6 +37,8 @@ public class DescricaoFlores extends AppCompatActivity {
             }
         });
 
+        perfiltexto = findViewById(R.id.perfiltexto);
+
         perfiltexto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +59,7 @@ public class DescricaoFlores extends AppCompatActivity {
 
         textofaleconosco = findViewById(R.id.faleconosco);
 
-        faleconosco.setOnClickListener(new View.OnClickListener() {
+        textofaleconosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(DescricaoFlores.this, FaleConosco.class);

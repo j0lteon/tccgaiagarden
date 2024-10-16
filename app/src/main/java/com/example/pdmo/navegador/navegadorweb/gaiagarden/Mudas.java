@@ -12,11 +12,11 @@ public class Mudas extends AppCompatActivity {
 
     ImageView muda;
 
-    ImageView seta;
-
     ImageView gaiagardenlogo;
 
-    ImageView estrela;
+    AppCompatActivity perfil;
+
+    TextView perfiltexto;
 
     ImageView faleconosco;
 
@@ -46,6 +46,17 @@ public class Mudas extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Mudas.this, DescricaoMudas.class);
+                startActivity(it);
+            }
+        });
+
+
+        perfiltexto = findViewById(R.id.perfiltexto);
+
+        perfiltexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Mudas.this, Perfil.class);
                 startActivity(it);
             }
         });

@@ -16,8 +16,11 @@ public class Folhagens extends AppCompatActivity {
 
     ImageView gaiagardenlogo;
 
+    AppCompatImageView perfil;
 
-    AppCompatImageView faleconosco;
+    TextView perfiltexto;
+
+    ImageView faleconosco;
 
      TextView textoespada;
 
@@ -27,6 +30,26 @@ public class Folhagens extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_folhagens);
+
+        perfil = findViewById(R.id.perfil);
+
+        perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Folhagens.this, Perfil.class);
+                startActivity(it);
+            }
+        });
+
+        perfiltexto = findViewById(R.id.perfiltexto);
+
+        perfiltexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(Folhagens.this, Perfil.class);
+                startActivity(it);
+            }
+        });
 
         espadadesaojorge = findViewById(R.id.espadadesaojorge);
 

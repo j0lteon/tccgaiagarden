@@ -12,9 +12,6 @@ import android.widget.TextView;
 
 public class Categorias extends AppCompatActivity {
 
-
-    AppCompatImageView faleconosco;
-
     ImageView categoriacacto;
 
     ImageView categoriaflores;
@@ -74,15 +71,6 @@ public class Categorias extends AppCompatActivity {
         });
 
 
-        faleconosco = findViewById(R.id.imgfalecnsc);
-
-        faleconosco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(Categorias.this, FaleConosco.class);
-                startActivity(it);
-            }
-        });
 
         categoriacacto = findViewById(R.id.categoriacactos);
 
