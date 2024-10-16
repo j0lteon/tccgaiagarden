@@ -19,7 +19,6 @@
         style="@style/Logo1"
         android:src="@drawable/gaiagardenlogo"
 
-
         android:layout_marginRight="282dp"
 
         app:layout_constraintTop_toTopOf="parent"
