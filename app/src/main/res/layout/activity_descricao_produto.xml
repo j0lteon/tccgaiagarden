@@ -71,6 +71,41 @@
         />
 
     <ImageView
+        android:id="@id/imgfalecnsc"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+
+        android:layout_marginRight="20dp"
+
+        android:src="@drawable/faleconosco"
+
+        app:layout_constraintTop_toTopOf="@id/barra"
+        app:layout_constraintStart_toEndOf="@id/perfiltexto"
+        app:layout_constraintEnd_toEndOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        />
+
+    <TextView
+        android:id="@+id/faleconosco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+
+        android:layout_marginRight="5dp"
+
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        android:text="Fale Conosco"
+
+        app:layout_constraintStart_toEndOf="@id/imgfalecnsc"
+        app:layout_constraintEnd_toEndOf="@id/barra"
+        app:layout_constraintBottom_toBottomOf="@id/barra"
+        app:layout_constraintTop_toTopOf="@id/barra"
+        />
+
+    <ImageView
         android:id="@+id/espajorge"
         android:src="@drawable/espadadesaojorge"
 

@@ -145,7 +145,7 @@
         android:id="@+id/precofloroxa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 80,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -196,7 +196,7 @@
         android:id="@+id/precoliriobranco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 80,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -247,7 +247,7 @@
         android:id="@+id/precocopo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 90,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -297,7 +297,7 @@
         android:id="@+id/precoorquidea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 98,00"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -344,7 +344,7 @@
         android:id="@+id/precorosas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 78,90"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -393,7 +393,7 @@
         android:id="@+id/precomargaridas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 80,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -441,7 +441,7 @@
         android:id="@+id/precoanturio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 60,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -493,7 +493,7 @@
         android:id="@+id/precoazaleia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 70,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
@@ -544,7 +544,7 @@
         android:id="@+id/precocravo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$ 6,50"
+        android:text="R$ 85,50"
 
         android:textStyle="bold"
         android:textColor="@color/texto"
